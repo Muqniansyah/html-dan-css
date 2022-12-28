@@ -1,0 +1,68 @@
+/*ini adalah contoh penggunaan pseudo class yang berhubungan dengan link.*/
+.hello:link{
+	color: orange;
+}
+.hello:hover{
+	font-family: arial;
+	font-size: 20px;
+}
+.hello:active{
+	font-style: italic;
+	color: green;
+}
+.hello:visited{
+	color: red;
+}
+
+
+
+/*ini adalah contoh penggunaan pseudo class yang berhubungan dengan posisi elemen(1).*/
+/*dan pseudo class yang memiliki parent*/
+/*cara menulisnya harus digabung contoh=
+li:first-child a*/
+
+li:first-child a{
+color: green;
+}
+/*contoh gabungan pseudo class*/
+li:first-child a:hover{
+	color: yellow;
+	font-size: 20px;
+}
+
+li:last-child a {
+color: red;
+}
+/*contoh gabungan pseudo class*/
+li:last-child a:hover{
+	color: green;
+	font-size: 20px;
+}
+/*arti dari 3n+2 adalah kelipatan 3 yang
+dimulai dari 2 angka didepan 3*/
+li:nth-child(3n+2) a {
+	color: yellow;
+}
+/*contoh penggabungan pseudo class*/
+li:nth-child(3n+2) a:hover{
+	color: grey;
+	font-size: 20px;
+}
+/*intinya jika pseudo class ingin digabung,
+harus tulis 2 kali.*/
+
+
+
+/*ini adalah cotoh penggunaan pseudo class yang berhubungan dengan posisi elemen (2).*/
+/*dan pseudo class yang tidak memiliki parent*/
+/*cara menulisnya harus digabung contoh=
+p:first-of-type*/
+p:first-of-type{
+color: red;
+}
+
+p:last-of-type {
+	color: orange;
+}
+/*jika ada kendala dengan browsernya,tag yang dituliskan/
+diketikkan,tidak akan tampil dibrowser.

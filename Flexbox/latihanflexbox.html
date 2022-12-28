@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>latihan flexbox</title>
+	<style>
+
+	html, body {
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		font-family: arial, helvetica, sans-serif;
+		background-color: #333;
+		line-height: 1.65;
+		/*tujuan padding bottom agar bisa discrol*/
+		padding-bottom: 1000px;
+	}
+
+	/*latihan 1*/	
+	.container1 {
+		width: 800px;
+		background-color: #4FFF00FF;
+		margin: 50px auto;	
+		padding: 20px; 
+		box-sizing: border-box;
+		display: flex;
+	}
+	
+	.kolom-utama {
+		flex: 1;
+		order: 2;	
+	}
+
+	.sidebar-1 {
+		flex: 1;
+		order: 1;
+	}
+
+	.sidebar-2 {
+		flex: 1;
+		order: 3;
+	}
+	/*akhir latihan 1*/
+
+
+	/*latihan 2*/
+	.container2 {
+		/*max width artinya maximal widthnya 800.jadi kalo diperbesar tidak akan besar tapi ketika dikecilkan menjadi berubah atau responsive*/
+		max-width: 800px;
+		margin: 50px auto;
+
+	}
+
+	.layanan {
+		padding: 20px;
+		box-sizing: border-box;
+		margin-bottom: 20px;
+	}
+
+	.layanan.satu {
+		background-color: #676;
+	}
+	.layanan.dua {
+		background-color: #898;
+	}
+	.layanan.tiga {
+		background-color: #999;
+	}
+
+	/*akhir latihan 2*/
+
+
+	/*latihan 3*/
+	.container3 {
+		max-width: 800px;
+		margin: 50px auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.thumbnail {
+		width: 50%;
+		/*jika ingin dikasi jarak pada gambar bisa diberikan padding*/
+	/*	padding: 15px;*/
+	}
+
+	.thumbnail img {
+		width: 100%;
+	}
+
+	/*akhir latihan 3*/
+
+	/*latihan 4*/
+	.container4 {
+		max-width: 800px;
+		margin: 50px auto;
+	
+	}
+
+	.card {
+		border: 1px solid #D2D02CFF;
+		border-radius: 10px;
+		background-color: #83D42AFF;
+		overflow: hidden;
+		/*supaya tidak terlalu mepet kasih margin di cardnya*/
+		margin: 10px;
+		flex: 1;
+		margin-bottom: 25px;
+	}
+
+	.card .header {
+		height: 150px;
+		background-color: #13EBE6FF;
+	}
+
+	.card .content {
+		text-align: center;
+		padding-bottom: 20px;
+	}
+	
+	/*akhir latihan 4*/
+
+	/*latihan 5*/
+	.container5 {
+		width: 500px;
+		height: 500px;
+		margin: 50px auto;
+		border: 5px solid black;
+		display: flex;
+	}
+
+	.kotak {
+		width: 100px;
+		height: 100px;
+		background-color: brown;
+		color: white;
+		text-align: center;
+		/*kasih margin auto dan jgn lupa dicontainer5 atau pembungkusnya berikan display flex*/
+		margin: auto;
+		display: flex;
+	}
+
+	.kotak span {
+		/*kasih margin auto dan jgn lupa dikotak atau pembungkusnya berikan display flex*/
+		margin: auto;
+	}
+	/*akhir latihan 5*/
+
+
+	/*responsive*/
+	/*dimasukin ke media query supaya responsive. media query ini menetukkan kalo lebar layarnya berapa harus memakai css yang mana.*/
+	/*cara bacanya : jika min-widthnya 600px artinya pakai css yg ini,jadi minimal 600px keatas pakai css yg dibawah ini tapi kalo dibawah 600px pakai css yang biasa.*/
+	@media(min-width: 600px) {
+		.container2 {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.layanan {
+			width: 30%;
+		}
+
+		.thumbnail {
+			width: 25%;
+		}
+
+		.container4 {
+			display: flex;
+		}
+
+		/*cara bacanya : kalo ada card yang kelasnya besar*/
+		.card.besar {
+		transform: scale(1.12);
+		}
+
+	}
+	</style>
+</head>
+<body>
+	<!-- latihan 1 : membuat layaout halaman menggunakan kolom-->
+	<div class="container1">
+		<div class="kolom-utama">
+			<h1>Judul artikel</h1>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore accusamus sunt totam soluta obcaecati dignissimos cupiditate, quia, quos, nam commodi sit officia voluptatibus non, dicta?</p>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Nemo eos dolores voluptatum neque deleniti rem aliquam perferendis optio est, commodi ab praesentium dolore voluptas, vel natus sunt libero hic sed reiciendis dicta velit assumenda. Numquam.</p>
+		</div>
+
+		<div class="sidebar-1">
+			<h3>sidebar-satu</h3>
+			<ul>
+				<li><a href="">link 1</a></li>
+				<li><a href="">link 2</a></li>
+				<li><a href="">link 3</a></li>
+				<li><a href="">link 4</a></li>
+				<li><a href="">link 5</a></li>
+			</ul>
+		</div>
+		
+		<div class="sidebar-2">
+			<h3>sidebar-dua</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Fugiat quisquam odio dolorem laborum pariatur aperiam.</p>
+		</div>		
+	</div>
+	<!-- akhir latihan 1 -->
+
+	<!-- latihan 2 : membuat services/features -->
+	<div class="container2">
+		<div class="layanan satu">
+			<h4>layanan 1</h4>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, adipisci!</p>
+		</div>
+		<div class="layanan dua">
+			<h4>layanan 2</h4>
+			<p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Quas culpa ipsa quidem excepturi voluptates nisi itaque? Sit, voluptatem.</p>
+		</div>
+		<div class="layanan tiga">
+			<h4>layanan 3</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Corporis error facilis nulla quo, repellendus veniam ea corrupti fugit exercitationem illum!</p>
+		</div>
+	</div>
+	<!-- akhir latihan 2 -->
+
+	<!-- latihan 3 : membuat galery -->
+	<div class="container3">
+		<div class="thumbnail">
+			<img src="img1.jpg">
+		</div>
+		<div class="thumbnail">
+			<img src="img1.jpg">
+		</div>
+		<div class="thumbnail">
+			<img src="img1.jpg">
+		</div>
+		<div class="thumbnail">
+			<img src="img1.jpg">
+		</div>
+		<div class="thumbnail">
+			<img src="img1.jpg">
+		</div>
+	</div>
+	<!-- akhir latihan 3 -->
+
+	<!-- latihan 4 : membuat card -->
+	<div class="container4">
+		<div class="card">
+			<div class="header"></div>
+			<div class="content">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, sed.</p>
+				<button>Buy Now!</button>
+			</div>
+		</div>
+
+		<div class="card besar">
+			<div class="header"></div>
+			<div class="content">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, sed.</p>
+				<button>Buy Now!</button>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="header"></div>
+			<div class="content">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, sed.</p>
+				<button>Buy Now!</button>
+			</div>
+		</div>
+	</div>
+	<!-- akhir latihan 4 -->
+
+	<!-- latihan 5 : membuat centering (buat elemen berada ditengah tengah persis dari elemen pembungkusnya) -->
+	<div class="container5">
+		<div class="kotak"><span>hello world!</span></div>
+	</div>
+	<!-- akhir latihan 5 -->
+</body>
+</html>

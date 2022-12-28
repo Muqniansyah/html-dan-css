@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>border</title>
+	<style>
+	/*contoh border menambah ukuran elemen.*/
+		.satu{
+			width: 200px;
+			height: 200px;
+			background-color: coral;
+			margin: 20px auto;
+			padding: 50px;
+			border-left: 5px solid black;
+			border-right: 10px dashed blue;
+		}
+	/*contoh border menambah ukuran elemen yang sudah dirubah lebarnya.*/
+		.dua{
+			width: 185px;
+			height: 200px;
+			background-color: coral;
+			margin: 20px auto;
+			padding: 50px;
+			border-left: 5px solid black;
+			border-right: 10px dashed blue;
+		}
+	</style>
+</head>
+<body>
+<h1>lanjutan pembelajaran keenam</h1>
+<p>dan yang harus diingat adalah border juga menambah ukuran elemen. jadi pada saat berikan border walaupun hanya 1px, itu dapat merubah ukuran dari kotak.</p>
+	<br>
+
+<p><b>misalkan</b></p>
+<p>bikin border 5px solid black,artinya : menambahkan 5px disebelah kiri, 5px disebelah kanan, 5px diatas, dan 5px dibawah. jadi ukuran dari kotaknya nambah. jika diberikan padding lalu border berarti harus kalkulasi total dari lebar dan tingginya.</p>
+	<p>cara hitungnya :</p>
+	<p>total dimensi: width/height + padding + border.</p>
+		<br>
+
+
+
+<!-- contoh border menambah ukuran elemen. -->
+<div class="satu">jadi harus hati hati jika buat kotak dan didalamnya dikasih padding dan border, harus hati hati terhadap dimensinya.</div>
+<div class="dua">supaya untuk mengatasi hal itu. css punya properti khusus agar tidak menghitung/mengkalkulasi dimensinya, propertinya namanya box-sizing dan valuenya namanya border-box.</div>
+
+<p><b>penjelasan dari contohnya :</b></p>
+<p>penjelasannya: lebar dan tinggi 200px dan tambah padding keempat sisi 50px,berarti menjadi lebar 300, dan tambah border kiri 5px dan kanannya 10px, berarti sekarang lebarnya nambah 15 menjadi 315. jika lebarnya ingin tetap 200, berarti harus kurangi 15 yaitu 200-15 jadi 185. jadi buat lebarnya menjadi 185px,dengan begitu jadi ukuran kotaknya tetap 300x300.</p>
+
+
+
+	<br><hr>
+
+<a href="Border5boxsizing.html">penggunaan box-sizing.</a>
+</body>
+</html>

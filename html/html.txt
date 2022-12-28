@@ -1,0 +1,33 @@
+html
+
+jika melakukan program di notepad,harus ditulis secara manual.
+
+latihan 1 = membahas tentang tag head dan tag body yang ada dalam tag html.dan pengenalan tag paragraf serta judul/title.
+
+latihan 2 = tentang paragraf
+
+pembelajaran 3 = tentang pengenalan yang ada dihtml
+
+latihan 4 = tentang judul/heading
+
+latihan 5 = tentang list
+
+latihan 6 dan latihan 6 halaman2 = tentang hyperlink
+
+latihan 7,contoh 1 dan 2= tentang hyperlink jenis relative url 
+
+latihan 8 = tentang hyperlink jenis page anchor
+
+latihan 9 = tentang image
+
+latihan 10 = tentang tabel
+
+latihan 11 = tentang tabel (merging)
+
+latihan 12 = tentang form
+
+latihan 13 = tentang charset, symbol, dan entities.
+
+
+
+		selesai..

@@ -1,0 +1,18 @@
+h1{
+	font-family: arial, verdana, sans-serif;
+	font-size: 50px;
+	font-variant: small-caps;
+	font-style: italic;
+}
+p{
+	font-family: georgia, serif;
+	line-height: 50px;
+	font-style: oblique;
+	font-weight: 100-900;
+}
+/*cara membuat komentar pada css yaitu dengan mengklik ctrl+/*/
+/*yang berbeda hanyalah bentuk komentarnya saja.*/
+/*dan dibawah ini adalah contoh css font shorthand.*/
+body{
+	font:italic normal bold 16px/18px arial, verdana, sans-serif;
+}

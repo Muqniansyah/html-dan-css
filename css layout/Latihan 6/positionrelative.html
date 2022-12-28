@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>position</title>
+	<style>
+	/*contoh position relative.*/
+		div{
+			width: 200px;
+			height: 200px;
+		}
+		.satu{
+			background-color: lightgreen;
+		}
+		.dua{
+			background-color: violet;
+			position: relative;
+			top: 30px;
+			left: 50px;
+		}
+		.tiga{
+			background-color: gold;
+		}
+	</style>
+</head>
+<body>
+<h1>pembelajaran ke sepuluh</h1>
+
+<p><b>konsep position yang relative.</b></p>
+<ol>
+	<li>ketika kita menggerakkan elemen dengan posisi relative(menggunakan properti top, left, bottom, dan right), ruang yang ditempati oleh elemen tersebut masih ada/ruang yang ditempati sebelumnya oleh elemen masih ada.</li>
+	<li>ketika kita menggerakkan elemen dengan posisi relative, elemen akan bergerak relatif terhadap posisi semulanya.</li>
+	<li>jika kita memberi properti 
+	Top: 0; dan Left: 0;
+	maka elemen tidak berubah posisinya.</li>
+</ol>
+
+
+
+<p><b>contoh position relative.</b></p>
+<!-- contoh position relative. -->
+<div class="satu"></div>
+<div class="dua"></div>
+<div class="tiga"></div>
+	<br><br>
+
+<p><u>sedikit catatan atau penjelasan.</u></p>
+<!-- sedikit catatan atau penjelasan. -->
+<p>biasanya jarang menggeser geser elemen dengan posisi relative, karna biasanya menggunakan properti relative untuk sebuah elemen hanya karena ingin membuat elemennya maju 1 dimensi saja/keluar dari flow saja.</p>
+<p>karena biasanya yang menggerak gerakkan elemen non static, yaitu position absolute.</p>
+</body>
+</html>

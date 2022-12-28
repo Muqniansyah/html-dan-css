@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>viewport</title>
+	<style>
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			line-height: 1.8em;
+		}
+
+		header {
+			background-color: #ccc;
+			background-image: url(2000px.jpg);
+			background-size: cover;
+			background-position: center;
+				/*cara pemakaian yang pertama*/
+			height: 100vh;
+			display: flex;
+		}
+
+		h1 {
+				/*cara pemakaian yang kedua*/
+			font-size: 4vmax;
+				/*membuat tulisannya menyesuaikan dan turun kebawah saat ukuran smartphone/hp*/
+			line-height: 1.2em;
+			color: white;
+			text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+			text-align: center;
+			margin: auto;
+		}
+
+		section {
+			margin: 30px auto;
+			width: 80%;
+		}
+
+		section .detail {
+			font-size: 1.4rem;
+			text-align: center;
+			border-top: 1px solid black;
+			border-bottom: 1px solid black;
+			padding: 0.5em 0;
+			margin-bottom: 2em;
+			color: #333;
+		}
+
+		section p {
+			font-size: 1.2em;
+			margin-bottom: 1em;
+			text-indent: 1em;
+		}
+	</style>
+</head>
+<body>
+	
+	<header>
+		<h1>Ini adalah contoh dari penggunaan viewport</h1>
+	</header>
+
+	<section>
+		<div class="detail">
+			<span>by Muqniansyah Arifin</span>
+		</div>
+
+		<p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Ipsam dolores debitis odit exercitationem maxime asperiores. Sunt nisi placeat praesentium dignissimos. Earum, iure quam rerum facere fuga consequuntur cum tempore magni quasi quas, minima, eveniet voluptas deleniti beatae dolores fugit id dolorem explicabo deserunt molestiae cumque sunt est recusandae at, facilis.</p>
+
+		<p>Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Corrupti in fugit, necessitatibus mollitia similique id! Deserunt alias debitis voluptatem omnis veniam, ea eos distinctio in quis fugiat ipsa iste eum, hic assumenda quae vel! Voluptatem dolorem reiciendis, deserunt fugit quod!</p>
+	</section>
+
+
+</body>
+</html>

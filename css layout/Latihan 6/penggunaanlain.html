@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>penggunaan lain</title>
+	<style>
+	/*ini adalah contoh penggunaan lain dari properti top,left, bottom dan right pada position yang non-static.*/
+	body {
+		/*tujuan dari body height 2000px agar bisa discroll diwebsitenya. */
+		height: 2000px;
+	}
+
+	.kotak {
+		height: 50px;
+		background-color: grey;
+		position: fixed;
+		top: 0;
+		left: 0;
+		/*dengan memakai rightnya 0, maka berarti tidak perlu menggunakan width pada class kotaknya karna dengan memakai right 0,ditambah leftnya juga 
+		0(nol) mereka akan saling tarik menarik lebarnya.*/
+		right: 0;
+	}
+
+	h1 {
+		margin-top: 50px;
+	}
+	</style>
+</head>
+<body>
+
+<!-- div class kotak ini untuk membuat top-bar. -->
+<div class="kotak"></div>
+
+<!-- ini adalah penggunaan lain dari properti top,left,bottom dan right pada position yang non-static. -->
+<h1>ini adalah penggunaan lain dari properti top,left,bottom dan right pada position yang non-static.</h1>
+
+<h2>contoh pertama penggunaan lain dari properti top,left,bottom dan right pada position yang non-static.</h2>
+
+
+<p>dengan tambahan properti top,left,bottom, dan right.kita memberikan valuenya dengan angka 0 (nol) supaya valuenya saling tarik menarik yang memungkinkan kita untuk tidak memakai width dan height pada pembuatan top-bar. dan angka 0(nol) tadi bisa diubah dengan sesuai keinginan.</p>
+
+<p> dicontoh pertama ini membuat top-bar dengan position fixed tanpa width tapi dengan left dan right yang saling tarik menarik </p>
+
+<p>hasil dari contoh pertama ini akan membuat left dan right nya saling tarik menarik.</p>
+	<br><br>
+
+<a href="penggunaanlain2.html">contoh kedua dari penggunaan lain dari properti top,left,bottom dan right pada position yang non-static.</a>
+
+<a href="membuatpemberitahuan.html">value angka 0(nol) tadi bisa diubah dengan sesuai keinginan pada properti top,left,bottom, dan right.</a>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+cara resize gambar menggunakan corel photo paint :
+1.) masukkan gambar dan klik kanan digambar
+2.) klik resample
+3.) turunkan resolusi gambarnya menjadi 10dpi yang horizontal dan vertikal
+4.) image sizenya diganti menjadi 20 untuk width dan heightnya,tapi bukan di yang persen
+5.) save as gambar dan selesai.

@@ -1,0 +1,13 @@
+body{
+	background-color: #999999;
+	background-image: url(gambar.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+/*background repeat digunakan untuk mengulang terhadap satu sumbu saja.
+sumbu y saja atau x saja*/
+/*background image secara otomatis membuat gambar penuh sekaligus perulangan antara
+sumbu x dan y.*/
+/*ketika memakai properti background-repeat dengan valuenya no-repeat,
+maka bisa punya akses ke background-position.jika tidak memakai 
+valuenya no-repeat maka tidak punya akses ke background-position.*/

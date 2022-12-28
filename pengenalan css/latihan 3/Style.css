@@ -1,0 +1,18 @@
+h1{
+	color: skyblue;
+	text-align: center;
+	word-spacing: 10px;
+}
+
+p{
+	color: rgb(11,225,110);
+	text-indent: 100px;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+
+body{
+	letter-spacing: 3px;
+}
+

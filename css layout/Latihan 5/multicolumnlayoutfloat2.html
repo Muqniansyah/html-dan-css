@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>float</title>
+	<style>
+		/*ini adalah contoh penggunaan float pada multi-column layout.*/
+		.container{
+			width: 800px;
+			border: 1px solid black;
+			margin: auto;
+			padding: 5px;
+		}
+		/*supaya bersebelahan kasih float diketiga kolomnya.*/
+		/*lebarnya harus 800, jadi hati hati jika ingin tambah padding. jika ingin tambah padding pakai properti box-sizing dengan value border-box,  supaya padding tidak terpengaruh dengan width. contoh :*/
+		.kiri{
+			width: 150px;
+			background-color: salmon;
+			float: left;
+			padding: 10px;
+			box-sizing: border-box;
+		}
+		.tengah{
+			width: 500px;
+			background-color: blue;
+			float: left;
+		}
+		.kanan{
+			width: 150px;
+			background-color: red;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+<h1>pembelajaran ke delapan</h1>
+
+<p>ini adalah contoh penggunaan float pada multi-column layout yang ditambahkan padding.</p>
+<!-- ini adalah contoh penggunaan float pada multi-column layout yang ditambahkan padding. -->
+
+<div class="container">
+	<div class="kiri">kiri</div>
+	<div class="tengah">tengah</div>
+	<div class="kanan">kanan</div>
+</div>
+
+<p>dicontoh ini yang diberikan padding hanya yang kiri saja.</p>
+	<br>
+
+
+
+</body>
+</html>

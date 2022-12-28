@@ -1,0 +1,34 @@
+/*ini adalah contoh specificity pertama.*/
+p{color: red;}
+p{color: green;}
+/*maka hasil paragraf akan warna hijau,
+karena jika ditulis 2 baris seperti itu maka
+p yang kedua yang warna hijau akan menimpa
+p yang pertama yang warna merah.*/
+
+
+/*ini adalah contoh specificity kedua.*/
+#p1{color: red;}
+p{color: green;}
+/*maka hasil paragraf akan warna merah,
+karena #p1 lebih spesifik dari p*/
+
+
+/*ini adalah contoh specificity ketiga.*/
+ul#sarapan li{
+	color: green;
+}
+/*jika ditulis seperti dibawah ini warna nasi uduk
+atau makanan favorit akan warna hijau
+karna hasil specifitinya yang berat adalah  
+ul#sarapan li*/
+/*.favorit{
+	color: red;
+}*/
+
+/*jadi supaya warna nasi uduk atau makanan
+favoritnya berubah, ganti elemen yang .favorit tadi dengan lebih spesifik
+dengan cara menambahkan beratnya. yaitu:*/
+ul#sarapan li.favorit{
+	color: red;
+}

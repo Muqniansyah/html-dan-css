@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lanjutan rangkuman</title>
+</head>
+<body>
+<p>Klik <a href="rangkumanhtml.html">disini</a> untuk kembali kehalaman sebelumnya.</p>
+			<br><hr>
+<h2>rangkuman pembelajaran 10</h2>
+	<p>cara untuk melakukan multiple cursor yaitu dengan klik ctrl+seleksi dengan mouse/klik dengan mouse.</p>
+	<p>ditabel merging ini menggunakan 2 attribut yaitu 
+	attribut colspan dan rowspan.</p>
+
+	<h3>ini adalah table simpel yang belom dikasih attribut colspan dan rowspan</h3>
+		<h4>ini adalah table simpel yang belom dikasih attribut colspan dan rowspan</h4>
+		<table border="1" cellspacing="0" cellpadding="5">
+			<tr>
+				<td>1, 1</td>
+				<td>1, 2</td>
+				<td>1, 3</td>
+			</tr>
+			<tr>
+				<td>2, 1</td>
+				<td>2, 2</td>
+				<td>2, 3</td>
+			</tr>
+			<tr>
+				<td>3, 1</td>
+				<td>3, 2</td>
+				<td>3, 3</td>
+			</tr>
+		</table>
+			<br><br><br><br><br>
+	<h3>dan ini adalah contoh dari attribut colspan.</h3>
+		<table border="1" cellspacing="0" cellpadding="5">
+			<tr>
+				<td>1, 1</td>
+				<td colspan="2">colspan 2</td>
+			</tr>
+			<tr>
+				<td>2, 1</td>
+				<td>2, 2</td>
+				<td>2, 3</td>
+			</tr>
+			<tr>
+				<td>3, 1</td>
+				<td>3, 2</td>
+				<td>3, 3</td>
+			</tr>
+		</table>
+			<br><br><br><br><br>
+	<h3>dan ini adalah contoh dari attribut rowspan.</h3>
+		<table border="1" cellspacing="0" cellpadding="5">
+			<tr>
+				<td rowspan="3">rowspan 3</td>
+				<td>1, 2</td>
+				<td>1, 3</td>
+			</tr>
+			<tr>
+				<td>2, 2</td>
+				<td>2, 3</td>
+			</tr>
+			<tr>
+				<td>3, 2</td>
+				<td>3, 3</td>
+			</tr>
+		</table>
+			<br><br><br><br><br>
+	<h3>dan ini adalah gabungan dari attribut colspan dan rowspan.</h3>
+		<table border="1" cellspacing="0" cellpadding="5">
+			<tr>
+				<td rowspan="3">rowspan 3</td>
+				<td colspan="2">colspan 2</td>
+			</tr>
+			<tr>
+				<td>2, 2</td>
+				<td>2, 3</td>
+			</tr>
+			<tr>
+				<td>3, 2</td>
+				<td>3, 3</td>
+			</tr>
+		</table>
+			<br><br><br><br><br>
+<h3>latihannya....</h3>
+	<h4>dan ini hasil dari latihannya..</h4>
+		<table border="1" cellspacing="0" cellpadding="5">
+			<tr>
+				<td>1, 1</td>
+				<td>1, 2</td>
+				<td>1, 3</td>
+				<td>1, 4</td>
+			</tr>
+			<tr>
+				<td>2, 1</td>
+				<td>2, 2</td>
+				<td>2, 3</td>
+				<td>2, 4</td>
+			</tr>
+			<tr>
+				<td>3, 1</td>
+				<td>3, 2</td>
+				<td>3, 3</td>
+				<td>3, 4</td>
+			</tr>
+			<tr>
+				<td>4, 1</td>
+				<td>4, 2</td>
+				<td>4, 3</td>
+				<td>4, 4</td>
+			</tr>
+		</table>
+			<br><br><br>
+		<table border="1" cellspacing="0" cellpadding="5">
+			<tr>
+				<td>1, 1</td>
+				<td>1, 2</td>
+				<td>1, 3</td>
+				<td>1, 4</td>
+			</tr>
+			<tr>
+				<td>2, 1</td>
+				<td colspan="2">2, 2</td>
+				<td>2, 4</td>
+			</tr>
+			<tr>
+				<td>3, 1</td>
+				<td colspan="2">3, 2</td>
+				<td>3, 4</td>
+			</tr>
+			<tr>
+				<td>4, 1</td>
+				<td>4, 2</td>
+				<td>4, 3</td>
+				<td>4, 4</td>
+			</tr>
+		</table>
+			<br><br><br><br><br>
+		<table border="1" cellspacing="0" cellpadding="5">
+			<tr>
+				<td>1, 1</td>
+				<td>1, 2</td>
+				<td>1, 3</td>
+				<td>1, 4</td>
+			</tr>
+			<tr>
+				<td>2, 1</td>
+				<td colspan="2" rowspan="2">2, 2</td>
+				<td>2, 4</td>
+			</tr>
+			<tr>
+				<td>3, 1</td>
+				<td>3, 4</td>
+			</tr>
+			<tr>
+				<td>4, 1</td>
+				<td>4, 2</td>
+				<td>4, 3</td>
+				<td>4, 4</td>
+			</tr>
+		</table>
+			<br><br><br>
+	<h3>cara mengerjakannya yaitu :</h3>
+		<ol>
+			<li>pakai atribut colspan untuk menyatukan baris 2 kolom 2 dan baris 3 kolom 2.</li>
+			<li>jangan lupa menghapus baris 2 kolom 3 dan baris 3 kolom 3.<p>alasannya karna baris 2 kolom 2 sudah disatukan dengan baris 2 kolom 3, begitupun dengan baris 3 kolom 2 sudah disatukan dengan baris 3 kolom 3.</p></li>
+			<li>gunakan attribut rowspan dibaris 2 kolom 2. <p>alasannya karna ingin disatukan dengan baris 3 kolom 2</p></li>
+			<li>hapus baris 3 dikolom 2. <p>alasannya karna baris 2 kolom 2 sudah disatukan dengan baris 3 kolom 2 , jadi harus dihapus supayu menyatu.</p></li>
+		</ol>
+			<br><hr>
+<h2>rangkuman pembelajaran 11</h2>
+	<h3>dan perlu diingat for ada dilabel dan id ada diinput.</h3>
+
+<form>
+<h3>ini adalah contoh attribut input jenis text.</h3>
+<p>for dan id harus sama tidak boleh beda.</p>
+	<h4>ini adalah contoh attribut input jenis text tanpa for dan id.</h4>
+		<label>username :</label>
+		<input type="text">
+			<br>
+<p>lebih disarankan memakai dengan for dan id daripada tidak memakai for dan id.bedanya adalah ketika memakai for dan id, saat kita mengklik username atau tulisannya atau labelnya kita bisa mengisi form tersebut.</p>
+	<h4>ini adalah contoh attribut input jenis text dengan for dan id.</h4>
+		<label for="username">username :</label>
+		<input type="text" id="username">
+			<br>
+<h3>ini adalah contoh attribut input jenis password.</h3>
+	<h4>ini adalah contoh attribut input jenis password tanpa for dan id.</h4>
+		<label>password :</label>
+		<input type="password">
+			<br>
+	<h4>ini adalah contoh attribut input jenis password dengan for dan id.</h4>
+		<label for="password">password :</label>
+		<input type="password" id="password">
+			<br>
+<h3>ini adalah contoh attribut input jenis radio.</h3>
+	<h4>ini adalah contoh attribut input jenis radio yang salah.</h4>
+		<input type="radio" id="pria"><label for="pria">pria</label>
+		<input type="radio" id="wanita"><label for="wanita">wanita</label>
+			<br>
+	<h4>ini adalah contoh attribut input jenis radio yang benar.</h4>
+	<p>dengan memakai tag name berarti untuk mengelompokkan pria dan wanita dalam jenis kelamin.</p>
+	<p>tag name harus sama antara input radio satu dengan yang lainnya. dan dicontoh yang ini ada 2 input radio yaitu pria dan wanita.</p>
+		<input type="radio" id="pria" name="Jenis kelamin"><label for="pria">pria</label>
+		<input type="radio" id="wanita" name="Jenis kelamin"><label for="wanita">wanita</label>
+			<br>
+<h3>ini adalah contoh attribut input jenis checkbox.</h3>
+	<h4>ini adalah contoh attribut input jenis checkbox.</h4>
+		<input type="checkbox" id="menyanyi"><label for="menyanyi">menyanyi</label>
+		<input type="checkbox" id="basket"><label for="basket">basket</label>
+		<input type="checkbox" id="voly"><label for="voly">voly</label>
+		<input type="checkbox" id="renang"><label for="renang">renang</label>
+			<br>
+<h3>ini adalah contoh attribut input jenis submit. ini adalah pemakaian yang salah, karena untuk membuat submit,reset, dan button memakai attribut button.</h3> 
+	<p>ini contoh pemakain salah.</p>
+		<input type="submit" value="kirim!">
+			<br><br>
+<h3>dan ini adalah contoh attribut button jenis submit, reset, dan button.</h3>
+	<p>ini adalah pemakaian yang benar.</p>
+		<h4>contoh dari attribut button jenis submit.</h4>
+		<button type="submit">kirim!</button>
+			<br>
+		<h4>contoh dari attribut button jenis reset.</h4>
+		<button type="reset">reset!</button>
+			<br>
+		<h4>contoh dari attribut button jenis button.</h4>
+		<button type="button">button!</button>
+			<br>
+<h3>ini adalah contoh dari attribut textarea.</h3>
+	<p>ini adalah contoh dari attribut textarea.</p>
+		<textarea></textarea>
+			<br>
+<h3>ini adalah contoh dari attribut select. dan didalam attribut select ada option/pilihan.</h3>
+	<p>ini adalah contoh dari attribut select.</p>
+		<select> 
+			<option>bandung</option>
+			<option>bekasi</option>
+			<option>jawa barat</option>
+		</select>
+			<br><br>
+	<p>atau bisa dijadikan seperti ini :</p>
+	<p>menjadikan pilihan disamping teks bisa dengan for dan id.</p>
+	<label for="nama kota">nama kota</label>
+		<select id="nama kota">  
+			<option>bandung</option>
+			<option>bekasi</option>
+			<option>jawa barat</option>
+		</select>
+			<br><br><br><br>
+</form>
+	<br><br><br><br><br>
+<h3>Hasil latihan meluruskan form dengan tabel</h3>
+<table border="1" cellspacing="0" cellpadding="5">
+	<tr>
+		<td> <label for="username"> username :</label></td>
+		<td> <input type="text" id="username"></td>
+	</tr>
+	<tr>
+		<td> <label for="password">password :</label></td>
+		<td> <input type="password" id="password"></td>
+	</tr>
+	<tr>
+		<td> <input type="radio" id="pria" name="jenis kelamin"><label for="pria">pria		</label></td> 
+		<td> <input type="radio" id="wanita" name="jenis kelamin"><label for="wanita">		wanita</label></td>
+	</tr>
+	<tr>
+		<td> <input type="checkbox" id="lari"><label for="lari">lari</label></td> 
+		<td> <input type="checkbox" id="jalan"><label for="jalan">jalan</label></td>
+	</tr>
+	<tr>
+		<td> combo box :</td>
+		<td> <select> 
+				<option>makan</option>
+				<option>minum</option>
+				<option>joget</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td> textarea :</td>
+		<td> <textarea></textarea></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><button type="button">button</button></td>
+	</tr>
+</table>
+	<br><br>
+<h3>dan menjadi</h3>
+<table>
+	<tr>
+		<td> <label for="username"> username :</label></td>
+		<td> <input type="text" id="username"></td>
+	</tr>
+	<tr>
+		<td> <label for="password">password :</label></td>
+		<td> <input type="password" id="password"></td>
+	</tr>
+	<tr>
+		<td> <input type="radio" id="pria" name="jenis kelamin"><label for="pria">pria		</label></td> 
+		<td> <input type="radio" id="wanita" name="jenis kelamin"><label for="wanita">		wanita</label></td>
+	</tr>
+	<tr>
+		<td> <input type="checkbox" id="lari"><label for="lari">lari</label></td> 
+		<td> <input type="checkbox" id="jalan"><label for="jalan">jalan</label></td>
+	</tr>
+	<tr>
+		<td> combo box :</td>
+		<td> <select> 
+				<option>makan</option>
+				<option>minum</option>
+				<option>joget</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td> textarea :</td>
+		<td> <textarea></textarea></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><button type="button">button</button></td>
+	</tr>
+</table>
+<h2>rangkuman pembelajaran 12</h2>
+	<h3>ini adalah contoh dari entities.</h3>
+		<h4>ini contoh dari entities.</h4>
+		<p>entities selalu dimulai dengan tanda dan (&) serta diakhiri dengan titik koma(;).</p>
+		<p><b>ini adalah contoh entities jenis spasi.</b></p>
+			<p>mari &nbsp; kita coba</p>
+				<br>
+		<p><b>ini adalah contoh tanpa entities jenis spasi.</b></p>
+			<p>mari kita coba</p>
+			<br>
+	<h3>ini adalah contoh dari symbol.</h3>
+		<h4>ini contoh dari symbol.</h4>
+		<p><b>contoh dibawah ini adalah contoh symbol copyright.</b></p>
+			<p> &copy; muqniansyah</p>
+				<br><br><hr>
+<h1>RANGKUMAN SELESAI.</h1>
+
+</body>
+</html>

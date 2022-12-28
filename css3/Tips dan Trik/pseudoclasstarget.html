@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>pseudo class target</title>
+	<style>
+		/*contoh target yang pertama */
+		:target {
+			background-color: salmon;
+		}
+
+		/*contoh target yang kedua*/
+		#p4:target {
+			background-color: blue;
+		}
+		#p5:target {
+			background-color: red;
+		}
+		#p6:target {
+			background-color: yellow;
+		}
+
+		/*contoh target yang ketiga*/
+		#p7:target {
+			background-color: brown;
+		}
+		#p8:target {
+			background-color: royalblue;
+		}
+		#p9:target {
+			background-color: purple;
+		}
+
+		/*contoh target yang keempat*/
+		.p10:target {
+			background-color: black;
+		}
+		.p11:target {
+			background-color: orange;
+		}
+		.p12:target {
+			background-color: grey;
+		}
+	</style>
+</head>
+<body>
+	
+	<h1 id="judul1">contoh target 1</h1>
+	<!-- dicontoh yang pertama ini menggunakan target dengan menuliskan # ditambah (nama id) pada uri-->
+
+	<p id="p1">Paragraf 1</p>
+	<p id="p2">Paragraf 2</p>
+	<p id="p3">Paragraf 3</p>
+
+		<hr><br><br><br>
+
+	<h1 id="judul2">contoh target 2</h1>
+	<!-- dicontoh yang kedua ini menggunakan target dengan menuliskan # ditambah (nama id) pada uri, tapi dengan warna yang berbeda beda disetiap paragraf  -->
+	<p id="p4">Paragraf 4</p>
+	<p id="p5">Paragraf 5</p>
+	<p id="p6">Paragraf 6</p>
+
+		<hr><br><br><br>
+
+	<h1 id="judul3">contoh target 3</h1>
+	<!-- dicontoh yang ketiga ini menggunakan target dengan mengaktifkan targetnya dengan cara menggunakan link, tapi dengan warna yang berbeda beda disetiap paragraf. -->
+	<ul>
+		<li><a href="#p7">Aktifkan p7</a></li>
+		<li><a href="#p8">Aktifkan p8</a></li>
+		<li><a href="#p9">Aktifkan p9</a></li>
+	</ul>
+	<p id="p7">Paragraf 7</p>
+	<p id="p8">Paragraf 8</p>
+	<p id="p9">Paragraf 9</p>
+
+		<hr><br><br><br>
+
+	<h1 id="judul4">contoh target 4</h1>
+	<!-- dicontoh yang keempat ini menggunakan target dengan mengaktifkan targetnya dengan cara menggunakan link, tapi dengan warna yang berbeda beda disetiap paragraf. dan dengan ditambahkan class pada html serta dipanggil di cssnya menggunakan class supaya specificitynya tidak berat.-->
+	<!-- karna jika menggunakan id specificitynya lebih berat dibanding dengan class. -->
+	<ul>
+		<li><a href="#p10">Aktifkan p10</a></li>
+		<li><a href="#p11">Aktifkan p11</a></li>
+		<li><a href="#p12">Aktifkan p12</a></li>
+	</ul>
+	<p id="p10" class="p10">Paragraf 10</p>
+	<p id="p11" class="p11">Paragraf 11</p>
+	<p id="p12" class="p12">Paragraf 12</p>
+
+		<hr><br><br><br>
+</body>
+</html>

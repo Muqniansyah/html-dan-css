@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>float</title>
+	<style>
+	/*ini adalah contoh dari out-of flow*/
+		div{
+			width: 200px;
+			height: 200px;
+		}
+		.satu{
+			background-color: salmon;
+		}
+		/*ini contoh float left*/
+		.dua{
+			background-color: lightgreen;
+			float: left;
+		}
+		.tiga{
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+<h1>pembelajaran ke delapan</h1>
+
+<p>ini adalah contoh dari out-of flow</p>
+<!-- ini adalah contoh dari out-of flow -->
+<div class="satu">float merupakan properti pada css untuk mengatur posisi sebuah elemen. sebuah elemen dapat dipaksa untuk berada disebelah kiri/kanan dari parent/pembukusnya dengan menggunakan properti ini.</div>
+<div class="dua">value dari float ada 3 jenis, yaitu : 
+1.) none :defaultnya.
+2.) left :elemennya akan berada dikiri.
+3.) right:elemennya akan berada dikanan.</div>
+<div class="tiga">float termasuk tipe out-of flow</div>
+
+
+	<br><br>
+<p><b>penjelasannya :</b>kotak biru hilang, ada dibelakang kotak hijau. karna jika dikasih float, kotak yang biru menganggap kotak hijau gak ada,karna kotak hijau sudah keluar dari flow normal.</p>
+<p>kotak yang diberikan float,akan keluar dari flow normalnya.</p>
+<p>jika diberikan float right,maka akan dipaksa disebelah kanan elemen pembungkusnya.</p>
+	<br>
+
+<p>perilaku dari elemen elemen ketika diberikan css:</p>
+<ol>
+	<li>normal flow : yang normal</li>
+	<li>out-of flow</li>
+</ol>
+	<br><br><hr>
+<a href="float2.html">ini adalah contoh dari out-of flow dan ini contoh float right.</a>
+
+
+</body>
+</html>

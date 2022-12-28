@@ -1,0 +1,62 @@
+body{
+	background-color: white;
+	background-image: url(gambar.jpg);
+	background-repeat: repeat-y;
+}
+/*ini contoh operator koma yang digunakan
+untuk 2 elemen yang ingin diberikan style yang sama.*/
+h1,h2{
+	color: green;
+	text-align: center;
+}
+h2{
+	font-style: italic;
+}
+/*ini adalah contoh operator spasi yang digunakan untuk yang
+lebih spesifik.*/
+/*ini adalah contoh penggunaan operator spasi yaitu 
+jika ingin memberi warna tulisan yang beda untuk ul dan ol*/
+ul li a {
+	color: orange;
+}
+
+ol li a {
+	color: red;
+}
+
+/*ini adalah contoh tipe class dan id 
+dalam memberikan warna yang beda untuk 2 paragraf.*/
+/*jika id gunakan kress(#), jika class gunakan titik(.).*/
+#p1{
+	color: orange;
+}
+.p2{
+	color: red;
+}
+
+/*ini adalah contoh penggunaan class*/
+.p3{
+	color: blue;
+}
+/*ini penggunaan class,dan kelebihannya bisa ditambahakan classnya*/
+/*kesimpulannya adalah p3 dan cetak tebal adalah 2 class yang jadi satu.*/
+.cetak-tebal{
+	font-weight: bold;
+}
+/*ini adalah contoh jika penggunaan id,tidak berfungsi karena tidak bisa
+ditambahkan lagi idnya*/
+#p3{
+	color: brown;
+}
+#cetak-tebal{
+	font-weight: bold;
+}
+/*ini adalah contoh merubah warna link*/
+a{
+	color: grey;
+}
+/*ini yang akan berubah hanya paragraf class saja 
+dan linknya tidak berubah.*/
+p.cetak-tebal{
+	font-size: 25px;
+}

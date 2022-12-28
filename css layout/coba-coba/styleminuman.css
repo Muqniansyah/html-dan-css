@@ -1,0 +1,222 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*style*/
+
+body {
+
+	font: 16px/28px arial, sans-serif;
+
+
+}
+/*container bertujuan untuk membungkus semua yang ada diwebsite kita,agar dapat memudahkan
+mengatur lebarnya.*/
+.container {
+	width: auto;
+	/*margin auto agar jarak kiri dan kanannya auto. dan ditimpa
+	dengan margin top agar jarak atasnya 220px.*/
+	margin: auto;
+	margin-top: 220px;
+	background-color: yellow;
+}
+
+.top-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	/*jika ganti height dan border di top-bar ini, 
+	cocokkan dengan margin di container.*/
+	height: 220px;
+	z-index: 9999;
+	background-color: #6A8BCA;
+	
+	
+}
+
+.top-bar p {
+	font-size: 40px;
+	margin-left: 20px;
+	margin-top: 150px;
+	font-weight: bolder;
+	color: white;
+	font: serif;
+		/*animasi minuman*/
+	animation: animasiminum 2s ease forwards;
+}
+
+@keyframes animasiminum {
+	from {
+	margin-left: 0px;
+	color: #3BB0D7;
+	}
+
+	to{
+	margin-left: 200px;
+	color: white;
+	}
+
+}
+
+.kotakminuman{
+	width: 500px;
+	background-color: salmon;
+		/*animasi kotak*/
+	animation: animasikotak 2s ease forwards;
+}
+
+@keyframes animasikotak {
+	0% {
+	width: 0px;
+	}
+
+	50%{
+	width: 350px;
+	}
+
+	100%{
+	width: 500px;
+	background-color: #3BB0D7;
+	}
+}
+
+
+/*navigasi*/
+.navigasi {
+	margin-top: 10px;
+	background-image: url(img/wp.png);
+}
+
+.navigasi a {
+	color: salmon;
+	text-decoration: none;
+	margin-left: 20px;
+	transition: 1s;
+}
+
+.navigasi a:hover {
+	background-color: black;
+	color: salmon;
+	padding: 10px;
+}
+
+/*header*/
+.header .judul{
+	color: black;
+  	text-align: center;
+  	font-size: 24px;
+  	font-family: arial;
+  	font-weight: bold;
+  	padding-bottom: 15px;
+}
+
+.header {
+	background-color: #C4C4C4;
+	/*untuk memberikan jarak dalamnya*/
+	padding: 20px;
+	padding-bottom: 10px;
+
+}
+
+/*formulir*/
+form {
+	padding: 20px;
+}
+
+form h2 {
+	color: grey;
+	padding-left: 10px;
+	font-size: 20px;
+
+}
+
+form p {
+	padding-top: 10px;
+}
+
+button {
+	background-color: grey;
+}
+
+
+/*footer*/
+.footer {
+	background-color: black;
+	padding: 10px;
+	margin-top: 20px;
+}
+/*cara bacanya copyright yang ada difooter*/
+.footer .copyright {
+	color: yellow;
+	font-size: 12px;
+	text-align: center;
+}
+
+
+
+
+
+
+/*clearfix*/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+.cf {
+    *zoom: 1;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>z-index</title>
+	<style>
+		/*ini adalah contoh dari z-index.*/
+		div {
+			width: 200px;
+			height: 200px;
+			/*dijadikan position absolute dahulu, supaya bisa diatur elemennya dengan z-index.*/
+			position: absolute;
+		}
+		.satu {
+			background-color: salmon;
+			/*semakin besar angka yang diberikan maka semakin depan elemennya.*/
+			z-index: 1;
+		}
+		.dua {
+			background-color: lightgreen;
+			top: 100px; 
+			left: 100px;
+
+		}
+		.tiga {
+			background-color: royalblue;
+			top: 200px;
+			left: 200px;
+		}
+	</style>
+</head>
+<body>
+
+<!-- ini adalah contoh dari z-index. -->
+
+	<div class="satu"></div>
+	<div class="dua"></div>
+	<div class="tiga"></div>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h1>pembelajaran ke sepuluh</h1>
+
+<p> diatas ini adalah contoh dari z-index.</p>
+<p><b>hasilnya :</b>nilai z-index yang class satu lebih besar dari yang lain karna class dua dan tiga tidak ada z-index, maka yang class satu berada paling depan.</p>
+	<br><br>
+
+<p><u>sedikit catatan atau penjelasan.</u></p>
+<!-- sedikit catatan atau penjelasan. -->
+<p>z-index digunakan untuk mengatur tumpukan dari elemen ketika elemen diberikan position non-static. hanya berlaku pada position relative, absolute, dan fixed.</p>
+	<br>
+
+
+<a href="z-index2position.html">contoh jika ditulis paling akhir/paling bawah,maka posisi elemen berada paling depan,tapi jika sebelumnya tidak diberikan z-index.</a>	
+
+<a href="z-index3position.html">contoh jika ingin membuat sebuah elemen berada paling depan diantara elemen elemen yang lain biasanya bisa kasih z-index yang paling besar sehingga tidak ada z-index lain yang melebihi itu.</a>
+</body>
+</html>

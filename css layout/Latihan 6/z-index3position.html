@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>z-index</title>
+	<style>
+		/*ini adalah contoh jika ingin membuat sebuah elemen berada paling depan diantara elemen elemen yang lain biasanya bisa kasih z-index yang paling besar sehingga tidak ada z-index lain yang melebihi itu.*/
+		div {
+			width: 200px;
+			height: 200px;
+			position: absolute;
+		}
+		.satu {
+			background-color: salmon;
+			/*z-index yang class satu ini lebih besar, maka class satu yang akan paling didepan.*/
+			z-index: 9999;
+			/*tapi jika ingin dibelakang, bisa kasih z-indexnya minus.contohnya yaitu :
+			*/
+			/*z-index: -9999;*/
+		}
+		.dua {
+			background-color: lightgreen;
+			top: 100px; 
+			left: 100px;
+			z-index: 2;
+		}
+		.tiga {
+			background-color: royalblue;
+			top: 200px;
+			left: 200px;
+		}
+	</style>
+</head>
+<body>
+
+<!-- ini adalah contoh jika ingin membuat sebuah elemen berada paling depan diantara elemen elemen yang lain biasanya bisa kasih z-index yang paling besar sehingga tidak ada z-index lain yang melebihi itu. -->
+
+	<div class="satu"></div>
+	<div class="dua"></div>
+	<div class="tiga"></div>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h1>pembelajaran ke sepuluh</h1>
+
+<p>diatas ini adalah contoh jika ingin membuat sebuah elemen berada paling depan diantara elemen elemen yang lain biasanya bisa kasih z-index yang paling besar sehingga tidak ada z-index lain yang melebihi itu.</p>
+<p>z-index yang class satu ini lebih besar, maka class satu yang akan paling didepan.tapi jika ingin dibelakang, bisa kasih z-indexnya minus.contohnya yaitu : </p>
+<p>z-index: -9999;</p>
+
+</body>
+</html>

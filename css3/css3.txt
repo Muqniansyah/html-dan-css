@@ -1,0 +1,31 @@
+css3
+
+
+Latihan 1 : Tentang Border-radius
+
+Latihan 2 : Tentang Opacity
+
+Latihan 3 : Tentang HSLa dan RGBa
+
+Latihan 4 : Tentang Box-shadow
+
+Latihan 5 : Tentang Text-shadow
+
+Latihan 6 : Tentang linear gradient dan radial gradient
+
+Latihan 7 : Tentang @fontface,google font, merubah format web font, dan web font generator.
+
+Latihan 8 : Tentang Vendor prefixes
+
+Latihan 9 : Tentang filter
+
+Latihan 10 : Tentang transform
+
+Latihan 11 : Tentang Transition
+
+Latihan 12 : Tentang Animation
+
+latihan websitenya yaitu membuat gallery dengan lightbox
+ 
+
+selesai....

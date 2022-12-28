@@ -1,0 +1,43 @@
+-cara cut itu dengan cara:
+1. pilih kata atau seleksi katanya, 
+2. tekan kata tersebut sampai muncul kotak putih kecil dikursor lalu drag atau pindahkan ketempat yang diinginkan.
+
+-cara inspect halaman (digoogle chrome):
+1. buka browser google chrome.
+2. klik kanan di browsernya.
+3. pilihi inspect.
+
+-cara membuat dua kolom atau lebih:
+1. klik menu view.
+2. lalu pilih layout dan pilih kolom atau yang lain sesuai kebutuhan dan keinginan.
+3. jangan lupa cara pindahkannya yaitu dengan drag filenya kekolom/tempat yang sudah disediakan. dan cara savenya satu per satu tidak bisa sekaligus.
+4. jadi kolom 1 bisa untuk html dan kolom 2 bisa untuk cssnya. dan seterusnya.
+
+-cara untuk pindah halaman selain tekan alt+tab, bisa juga tekan logo windows+tab.
+
+Latihan 1 = Tentang Display
+
+Latihan 2 = Tentang Dimensi
+
+Latihan 3 = Tentang overflow
+
+latihan 4 = Tentang box model :
+			1.)margin
+			2.)padding
+			3.)border
+			4.)box-sizing
+			5.)css reset
+
+latihan 5 = Tentang float dan clear
+
+latihan 6 = Tentang position	
+			a.)position static.
+			b.)position relative.
+			c.)position absolute.
+			d.)position fixed.
+			e.)z-index.
+			f.)penggunaan lain dari top,left,bottom, dan right.
+
+website sederhana = 1.) latihan Box model
+		    2.) latihan float
+		    3.) latihan position

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>transform</title>
+	<style>
+	p {
+		font-size: 20px;
+		text-align: center;
+	}
+
+/*ini adalah contoh skew X*/
+	.kotak1 {
+		width: 200px;
+		height: 200px;
+		background-color: lightblue;
+		margin: 50px auto 0;
+		/*jadi disini diberikan transisi supaya perpindahannya lebih halus*/
+		transition: 1s;
+	} 
+
+	.kotak1:hover {
+		/*maksudnya disini yaitu ketika kotaknya dihover/mouse berada diatas kotak nanti kotak akan mentransformasi skew X dengan sebesar 30 derajat*/
+		transform: skewX(30deg);
+		/*untuk skew X sama saja contohnya dengan skew. tapi akan berbeda bila dikasih skew Y.*/
+	}
+
+/*ini adalah contoh skew Y*/
+	.kotak2 {
+		width: 200px;
+		height: 200px;
+		background-color: lightblue;
+		margin: 50px auto 0;
+		/*jadi disini diberikan transisi supaya perpindahannya lebih halus*/
+		transition: 1s;
+	} 
+
+	.kotak2:hover {
+		/*maksudnya disini yaitu ketika kotaknya dihover/mouse berada diatas kotak nanti kotak akan mentransformasi skew Y dengan sebesar 30 derajat*/
+		transform: skewY(30deg);
+	}
+
+	</style>
+</head>
+<body>
+	
+
+<!-- ini adalah contoh transform -->
+<div class="kotak1"></div>
+<p><b>kesimpulan kotak 1 :</b> yang awalnya kotak biasa tanpa transform, lalu begitu diberikan hover nanti kotaknya akan mentransformasi skew X dengan sebesar 30 derajat.</p>
+<p>untuk skew X sama saja contohnya dengan skew. tapi akan berbeda bila dikasih skew Y.</p>
+	<br><br><br>
+
+<div class="kotak2"></div>
+<p><b>kesimpulan kotak 2 :</b> yang awalnya kotak biasa tanpa transform, lalu begitu diberikan hover nanti kotaknya akan mentransformasi skew Y dengan sebesar 30 derajat.</p>
+	<br><br><br>
+
+
+
+</body>
+</html>

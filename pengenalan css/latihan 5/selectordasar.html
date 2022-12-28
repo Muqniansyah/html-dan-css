@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tentang selector</title>
+	<link rel="stylesheet" type="text/css" href="selector.css">
+</head>
+<body>
+
+<h1>ini pembelajaran kelima tentang selector dasar</h1>
+
+<p>selector digunakan pada css untuk mengenali sebuah elemen html yang akan diberi style.</p>
+
+<p>yang bisa digunakan diselector yaitu: elemen html, id, class, complex selector. untuk yang id dan class itu adalah selector buatan sendiri, yaitu selector khusus.</p>
+
+<h2>untuk tipe elemen html</h2>
+<p>operator yang pertama adalah koma(,) yang digunakan untuk 2 elemen yang ingin diberikan style yang sama, caranya cukup menuliskan 1 properti/diberikan grouping dengan operator koma.koma bisa diartikan sebagai dan.</p>
+
+<p>operator yang kedua adalah spasi yang digunakan untuk yang lebih spesifik. spasi artinya didalam.</p>
+<p>ini adalah contoh penggunaan operator spasi yaitu jika ingin memberi warna tulisan yang beda untuk ul dan ol</p>
+<!-- ini contoh ul dan olnya -->
+	<br>
+<p>ini yang ul</p>
+<ul>
+	<li><a href="#"> link 1</a></li>
+	<li><a href="#"> link 2</a></li>
+	<li><a href="#"> link 3</a></li>
+	<li><a href="#"> link 4</a></li>
+	<li><a href="#"> link 5</a></li>
+</ul>
+	<br>
+<p>ini yang ol</p>
+<ol>
+	<li><a href="#"> link 6</a></li>
+	<li><a href="#"> link 7</a></li>
+	<li><a href="#"> link 8</a></li>
+	<li><a href="#"> link 9</a></li>
+	<li><a href="#"> link 10</a></li>
+</ol>
+
+<h2>ini untuk tipe class dan id</h2>
+<h3>ini pemakaian id</h3>
+<p id="p1">untuk memakai nama id dan class boleh bebas. jika id gunakan kress(#), jika class gunakan titik(.).</p>
+
+<h3>ini pemakaian class</h3>
+<p class="p2">dan ini adalah contoh tipe class dan id dalam memberikan warna yang beda untuk 2 paragraf.</p>
+
+<h2>ini penggunaan class</h2>
+<p>perbedaan dari id adalah:</p>
+<ol>
+	<li>sebuah elemen html hanya boleh punya 1 id.</li>
+	<li>setiap halaman hanya boleh punya 1 elemen dengan id tersebut atau id tidak boleh sama.</li>
+	<li>dapat digunakan penanda untuk link</li>
+	<li>digunakan untuk javascript</li>
+	<li>sebaiknya tidak digunakan untuk css(lebih baik gunakan class) karna bebannya lebih berat.</li>
+</ol>
+
+<h3>ini contoh link yang ditambah class .</h3>
+<a href="#" class="cetak-tebal">halokawan</a>
+
+<h3>ini contoh paragraf sekaligus penggunaan class.</h3>
+<p class="p3 cetak-tebal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<h3>ini contoh paragraf sekaligus penggunaan id.</h3>
+<p id="p3 cetak-tebal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+</body>
+</html>

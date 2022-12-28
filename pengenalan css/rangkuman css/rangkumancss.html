@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rangkuman</title>
+	<!-- yang dipakai ini adalah penerapan penyimpanan external css. -->
+	<link rel="stylesheet" href="rangkumanstyle.css">
+</head>
+<body>
+
+<h1>rangkuman pembelajaran 1</h1>
+<p><u>embed</u> adalah tipe penyimpanan css yang langsung dalam html yang berada di head.</p>
+<p><u>external</u> adalah tipe penyimpanan css yang tidak langsung dalam html. dengan cara memiliki file sendiri dengan ektensi file css, dan nanti dihubungkan dengan cara link.</p>
+<p><u>inline</u> adalah tipe penyimpanan css yang langsung dalam html yang berada di body. tipe inline ini kurang disarankan karena memakai css seharusnya digunakan terpisah antara html dan css. tujuannya supaya mempermudah dan lebih simple.</p>
+	<br><br><hr>
+
+<h1>rangkuman pembelajaran 2</h1>
+<h2>ini pembelajaran kedua tentang font</h2>
+<h3>Di font ini ada :</h3>
+<ol>
+	<li>font-family</li>
+	<li>font-size</li>
+	<li>font-weight</li>
+	<li>font-variant</li>
+	<li>font-style</li>
+	<li>line-height</li>
+</ol>
+
+<p>untuk font-size ada 3 jenis: <u>px, %, em</u></p>
+<p>untuk font-weight ada 5 jenis: <u>lighter, normal, 100-900, bold, bolder</u></p>
+<p>untuk font-variant ada 2 jenis: <u>normal, small-caps</u></p>
+<p>untuk font-style ada 3 jenis: <u>normal, italic, oblique</u></p>
+<p>untuk line-height ada 3 jenis: <u>normal, px, em</u></p>
+	<br><br><hr>
+
+<h1>rangkuman pembelajaran 3</h1>
+<h2>ini pembelajaran ketiga tentang text</h2>
+<h3>Di text ini ada:</h3>
+<ol>
+	<li>color</li>
+	<li>text-align</li>
+	<li>text-indent</li>
+	<li>text-decoration</li>
+	<li>text-transform</li>
+	<li>letter-spacing</li>
+	<li>word-spacing</li>
+</ol>
+<p>untuk warna kita bisa memberikan 3 tipe warna yaitu :</p>
+<ol>
+	<li><u>nama warna</u></li>
+	<li><u>hexadecimal</u></li>
+	<!-- untuk memakai hexadecimal,jangan lupa memakai tanda pagar. -->
+	<li><u>rgb</u></li>
+</ol>
+<p>untuk text-align ada 4 jenis: <u>left, right, center, justify</u></p>
+<p>untuk text-indent ada 2 jenis: <u>px, %</u></p>
+<p>untuk text-decoration ada 4 jenis: <u>none, underline, overline, line-through</u></p>
+<p>untuk text-transform ada 4 jenis: <u>none, lowercase, uppercase, capitalize</u></p>
+<p>untuk letter-spacing ada 2 jenis: <u>normal, px</u></p>
+<p>untuk word-spacing ada 2 jenis: <u>normal, px</u></p>
+	<br><br><hr>
+
+<h1>rangkuman pembelajaran 4</h1>
+<h2>ini pembelajaran keempat tentang background</h2>
+<h3>Di background ini ada:</h3>
+<ol>
+	<li> background color</li>
+	<li> background image</li>
+	<li> background repeat</li>
+	<li> background position</li>
+</ol>
+<p>untuk background colornya bisa memakai 3 tipe warna, yaitu: <u>warna, hexadecimal, rgb.</u></p>
+<p>untuk background-repeat ada 4 jenis: <u>repeat, repeat-x, repeat-y, no-repeat</u></p>
+<h3>posisi untuk background-position ada 2 yaitu:</h3>
+<ol>
+	<li>terhadap sumbu x</li>
+	<p>yaitu : left/center/right</p>
+	<li>terhadap sumbu y</li>
+	<p>yaitu : top/center/bottom</p>
+</ol>
+<p>dan itu masih bisa di kombinasi antara posisi untuk sumbu x dan y
+</p>
+	<br><br><hr>
+
+<h1>rangkuman pembelajaran 5</h1>
+<h2>ini pembelajaran kelima tentang selector dasar</h2>
+	<p>selector digunakan pada css untuk mengenali sebuah elemen html yang akan diberi style.</p>
+	<p>yang bisa digunakan diselector yaitu:<b> elemen html, id, class, complex selector.</b> untuk yang id dan class itu adalah selector buatan sendiri, yaitu selector khusus.</p>
+
+<h3>untuk tipe elemen html</h3>
+	<p>operator yang pertama adalah koma(,) yang digunakan untuk 2 elemen yang ingin diberikan style yang sama, caranya cukup menuliskan 1 properti/diberikan grouping dengan operator koma.koma bisa diartikan sebagai dan.</p>
+	<p>operator yang kedua adalah spasi yang digunakan untuk yang lebih spesifik. spasi artinya didalam.</p>
+
+<h3>perbedaan dari id adalah:</h3>
+<ol>
+	<li>sebuah elemen html hanya boleh punya 1 id.</li>
+	<li>setiap halaman hanya boleh punya 1 elemen dengan id tersebut atau id tidak boleh sama.</li>
+	<li>dapat digunakan penanda untuk link</li>
+	<li>digunakan untuk javascript</li>
+	<li>sebaiknya tidak digunakan untuk css(lebih baik gunakan class) karna bebannya lebih berat.</li>
+</ol>
+	<br><br><hr>
+
+<h1>rangkuman pembelajaran 6</h1>
+<h2>ini pembelajaran keenam tentang pseudo class</h2>
+	<h3>pseudo class yang berhubungan dengan link</h3>
+	<ol>
+		<li>:link</li>
+		<li>:hover</li>
+		<li>:active</li>
+		<li>:visited</li>
+	</ol>
+	<h3>pseudo class yang berhubungan dengan posisi elemen(1) atau pseudo class yang memiliki parent.</h3>
+	<ol>
+		<li>:first-child</li>
+		<li>:last-child</li>
+		<li>:nth-child</li>
+	</ol>
+	<h3>pseudo class yang berhubungan dengan posisi elemen(2) atau pseudo class yang tidak memiliki parent.</h3>
+	<ol>
+		<li>:first-of-type</li>
+		<li>:last-of-type</li>
+	</ol>
+		<br><br><hr>
+
+<h1>rangkuman pembelajaran 7</h1>
+<h2>ini pembelajaran ketujuh tentang inheritance atau pewarisan pada css</h2>
+<p><b>inheritance</b> adalah sebuah elemen mewarisi beberapa nilai dari properti yang dimiliki oleh elemen parentnya.</p>
+	<h3>properti yang diwariskan :</h3>
+	<ol>
+		<li>color</li>
+		<li>font</li>
+		<li>letter-spacing</li>
+		<li>line-height</li>
+		<li>list-style</li>
+		<li>text-align</li>
+		<li>text-indent</li>
+		<li>text-transform</li>
+		<li>visibility</li>
+		<li>white-space</li>
+	</ol>
+		<br><br><hr>
+
+<h1>rangkuman pembelajaran 8</h1>
+<h2>ini pembelajaran kedelapan tentang specificity.</h2>
+<p> <b>specificity</b> yaitu setiap deklarasi (selector) memiliki berat yang berbeda. berat tersebut menentukkan seberapa spesifik sebuah elemen dapat dipilih oleh selector.</p>
+	<br><br><hr>
+
+<h1 class="end">RANGKUMAN SELESAI.</h1>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Transisi</title>
+	<style>
+/*ini adalah contoh dari transition dengan value fungsi.*/
+body {
+	margin: 0;
+	padding: 0;
+}		
+
+/*ini untuk menghias containernya*/
+.container {
+	width: 900px;
+	margin: 10px auto;
+	border: 5px solid black;
+}
+
+	/*ini keadaan awalnya*/
+.kotak {
+	width: 100px;
+	height: 100px;
+	background-color: salmon;
+	text-align: center;
+	line-height: 100px;
+}
+
+/*ini adalah contoh pemakaian transition yang fungsi.*/
+.kotak1 {transition: all 1s ease;}
+.kotak2 {transition: all 1s ease-in;}
+.kotak3 {transition: all 1s ease-out;}
+.kotak4 {transition: all 1s ease-in-out;}
+.kotak5 {transition: all 1s linear;}
+	/*pemakaiannya bisa dengan inspect elemen lewat browser google chrome lalu klik editor cubic-beziernya dan sesuaikan dengan kebutuhan lalu copy 4 angka cubic-beziernya dan paste di css kita.*/
+.kotak6 {transition: all 1s cubic-bezier(0, 1.15, 0, 1.02);}
+
+	/*ini keadaan akhirnya*/
+.container:hover .kotak {
+	transform: rotate(720deg);
+	margin-left: 800px;
+	background-color: royalblue;
+} 
+
+	</style>
+</head>
+<body>
+
+
+<h1>ini adalah contoh dari transition dengan value fungsi.</h1>
+<!-- ini adalah contoh dari transition dengan value fungsi.-->
+<div class="container">
+	<div class="kotak kotak1">ease</div>
+	<div class="kotak kotak2">ease-in</div>
+	<div class="kotak kotak3">ease-out</div>
+	<div class="kotak kotak4">ease-in-out</div>
+	<div class="kotak kotak5">linear</div>
+	<div class="kotak kotak6">cubic-bezier</div>
+</div>
+	<br><br><br>
+
+
+
+
+
+
+</body>
+</html>

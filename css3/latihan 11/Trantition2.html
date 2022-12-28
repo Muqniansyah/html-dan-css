@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Transisi</title>
+	<style>
+/*ini adalah contoh dari transition dengan value propertynya.*/
+body {
+	margin: 0;
+	padding: 0;
+}		
+
+	/*ini keadaan awalnya*/
+.kotak {
+	width: 100px;
+	height: 100px;
+	background-color: salmon;
+/*ini adalah contoh pemakaian transition yang property*/
+	transition: margin-left 1s;
+}
+
+	/*ini keadaan akhirnya*/
+.container:hover .kotak {
+	transform: rotate(180deg);
+	margin-left: 800px;
+	background-color: royalblue;
+} 
+
+
+	</style>
+</head>
+<body>
+	
+
+<h1>ini adalah contoh dari transition dengan value property.</h1>
+<!-- ini adalah contoh dari transition dengan value property.-->
+<div class="container">
+	<div class="kotak"></div>
+</div>
+	<br><br><br>
+
+
+
+<!-- dibungkus dengan div dengan contoh kelas container supaya menghindari ngelag saat mouse berada diatas kotak/hover. -->
+<p>dibungkus dengan div dengan contoh kelas container supaya menghindari ngelag saat mouse berada diatas kotak/hover.</p>
+<a href="Trantition3.html">contoh jika tidak diberikan elemen pembungkus</a>
+
+
+</body>
+</html>

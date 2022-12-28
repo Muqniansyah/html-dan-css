@@ -1,0 +1,230 @@
+nama email yg didaftarkan global git lokal : muqniansyah@gmail.com
+nama pengguna/user yg didaftarkan global git lokal : muqniansyah
+
+token dari github untuk melakukan push
+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
+
+keterangan token :
+inisialisasi token cukup sekali bersamaan dengan set upstream. sisanya tinggal push dengan cara 
+git push.
+
+github pages
+https://muqniansyah.github.io/
+
+A.)https://muqniansyah.github.io/linktree.html
+B.)https://muqniansyah.github.io/web-Muqni
+
+Perintah GIT
+
+1.) git
+menjalankan bagaimana cara menggunakan git
+
+2.)clear
+menghilangkan isi dari terminal
+
+3.)git --version
+untuk melihat versi dan sistem operasi 
+
+4.)git init
+menginisialisasi repo git dikomputer kita
+
+5.)git add <file(s)>
+menambahkan file kedalam stagging area
+
+6.)git status
+mengetahui status repo kita 
+
+7.)git commit
+melakukan commit
+
+8.)git config 
+melakukan/memasukkan konfigurasi kedalam git
+
+9.)git branch
+membuat branch
+
+10.)git help
+mengetahui cara pakai perintah dengan cepat
+
+11.)pwd 
+print working directory, untuk mengetahui direktory aktif
+
+12.)ls
+untuk mengetahui disebuah direktory ada folder dan file apa saja didalamnya
+
+13.)cd 
+change direktory, untuk pindah direrktory keawal
+
+14.)cd -
+pindah direktory sebelumnya
+
+15.)cd <namafolder>
+untuk change direktory masuk kefolder
+
+16.)git config --global user.email
+untuk mengkonfigurasi email untuk pertama kalinya. dan berlaku untuk semua folder dikomputer kita.
+
+17.)git config --global user.name
+untuk mengkonfigurasi nama untuk pertama kalinya. dan berlaku untuk semua folder dikomputer kita.
+
+18.)git add .
+semua file yg berubah(nambah,hilang,edit)pindah ke stagging area.
+
+19.)git log
+melihat commit apa saja yang sudah dilakukan.
+
+20.)git log -3 
+melihat 3 commit terakhir.
+
+21.)git log -- namafile.css
+supaya spesifik untuk mencari sebuah file
+keterangan :
+sehabis -- (minus minus) ketikkan nama filenya
+
+22.)git checkout 7667b -- style.css
+fungsi untuk kembali kecommit sebelumnya
+keterangan :
+- 7667b = 5 digit awal commmit hash
+- style.css = nama file yang ingin dikembalikkan
+
+23.)git commit -am "pesan commit"
+gunakan untuk mempermudah add nya jika filenya sudah modified
+keterangan :
+-petik dua ("") sebagai pesan commit
+
+24.)git commit -m "pesan commit"
+melakukan commit jika pesan commitnya singkat/sedikit
+keterangan :
+-petik dua ("") sebagai pesan commit
+
+25.)git branch <Nama_Branch>
+untuk membuat branch
+
+26.)git branch
+untuk mengetahui info dari branch/jumlah branch
+
+27.)git log --all --decorate --oneline --graph
+menampilkan visualisasi branchnya dalam bentuk graph/historynya
+
+28.)alias
+untuk membuat alias yang mempermudah kode dengan cara ganti kode yang lebih singkat yang dituliskan
+
+29.)graph
+adalah hasil dari alias yang dibuatkan untuk mempermudah penulisan 
+kode git log --all --decorate --oneline --graph
+
+30.)git checkout <Nama_Branch>
+untuk pindah branch
+
+31.)git merge <Nama_Branch>
+untuk melakukan merge
+keterangan :
+-untuk melakukan merge harus terlebih dahulu ada dibranch master
+
+32.)git branch -d <Nama_Branch>
+untuk menghapus branch
+
+33.)git branch --merged
+untuk mengetahui branch mana yang sudah dimerge
+
+32.)git branch -D <Nama_Branch>
+untuk menghapus branch dan tidak peduli apakah sudah dimerge atau belum
+
+33.)q
+untuk keluar dari git log yaitu cukup menekan "q"
+
+34.)git checkout 7667b23
+jika ingin kembali dan melihat ke commit sebelumnya.
+keterangan :
+- 7667b23 = 7 digit awal commmit hash
+
+35.)git rm --cached <file>
+keluar dari staging area
+
+36.)tekan esc lalu ketik :q!
+untuk keluar dari editor vim tanpa save yang kalian tulis di vim
+
+37.)git checkout 5667b --style.css
+untuk chekoout kesebuah keadaan pada satu file saja.
+keterangan : 
+A)5667b = 5 digit awal sebuah commit
+B)--style.css = untuk pada satu file saja
+
+38.)git clone https://github.com/Muqniansyah/repo-cloning-lokal.git
+untuk buat cloning repo lokal.
+keterangan :
+-di repo github ada repo tapi dilokal tidak ada repo maka dari itu kita lakukan cloning
+-https://github.com/Muqniansyah/repo-cloning-lokal.git = hasil copy clone dari github repo yang https
+
+39.)git remote
+untuk melihat nama dari remote. dan bisa untuk melihat apakah tersambung dengan remote.
+dan nama defaultnya jika cloning dari repo github adalah origin.
+
+40.)git remote -v
+melihat data remote lebih detail
+
+41.)git push
+untuk kirim perubahan ke remote kita
+
+42.)git config --list
+untuk melihat user-name dan user-email git lokal
+keterangan :
+-untuk keluar dari git config --list tekan q
+
+43.)git config --local user.email
+untuk mengkonfigurasi email khusus untuk repo tertentu.
+
+44.)git config --local user.name
+untuk mengkonfigurasi nama khusus untuk repo tertentu.
+
+45.)cd ..
+untuk keluar dari folder 
+
+46.)mkdir <nama_folder>
+untuk membuat folder baru 
+
+47.)git push -u origin main
+keterangan:
+a.)-u = untuk mengeset upstream,supaya kedepannya tinggal menuliskan git push saja sudah otomatis dikirim keremote yang nama origin dan branchnya main.
+b.)jika push untuk pertama kalinya maka gunakan code ini
+
+48.)git fetch
+untuk mengecek repo yang ada diremote sudah sampai mana commitnya dan apakah berbeda dengan commit yang dilokal. 
+
+49.)git pull
+untuk mengambil data diremote.supaya bisa melakukan merge conflict. 
+dan biasanya juga digunakan untuk merge commit
+
+50.)git remote add origin https://github.com/Muqniansyah/Muqniansyah.github.io.git
+untuk menghubungkan repo dilokal ke repo yang ada digithub
+
+51.)git remote add <nama_remote> https://github.com/sandhikagalih/simple-landing-page.git
+untuk menambahkan remote baru
+keterangan :
+-https://github.com/sandhikagalih/simple-landing-page.git = sebagai alamatnya
+-<nama_remote> = diisi bebas karna biasanya defaultnya berisi origin
+
+52.)git merge sandhikagalih/master
+cara supaya perubahan direpo github orang lain yang kita fork selalu sama dengan repo yang difork ada di lokal kita.
+dengan cara lakukan merge.
+keterangan :
+-sandhikagalih = nama remote
+-master = nama branch
+
+53.)git checkout -b <nama_branch>
+gunanya jika blom ada branchnya maka akan dibuatkan dan otomatis langsung pindah kebranch yang baru dibuat.
+
+54.)git push origin --delete <nama_branch>
+untuk menghapus branch yang ada diremote github
+
+55.)git remote set-url origin https://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@github.com/Muqniansyah//coba-git-ignore.git
+untuk set url atau inisialisasi token.
+keterangan :
+- origin = nama remotenya
+- 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 = token
+- Muqniansyah = username
+- coba-git-ignore.git = repository folder
+
+56.)git rebase <nama_branch>
+cara menggunakan rebase
+

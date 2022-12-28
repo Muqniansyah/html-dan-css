@@ -1,0 +1,14 @@
+body{
+	font-family: arial;
+	color: darkgrey;
+}
+/*supaya a mengikuti parentnya kita kasih valuenya yaitu
+inherit*/
+a{color: inherit;}
+/*kita bisa saja mengganti color di link menjadi darkgrey tapi 
+jika body kita ganti colornya menjadi hijau,si link tadi akan tetap
+berwarna darkgrey*/
+
+/*contohnya jika hanya ganti color saja:
+a{color: darkgrey;}
+kekurangannya adalah warnanya tidak mengikuti warna orang tua atau parentnya yaitu body.*/

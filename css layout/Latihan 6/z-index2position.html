@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>z-index</title>
+	<style>
+	/*contoh jika ditulis paling akhir/paling bawah,maka posisi elemen berada paling depan,tapi jika sebelumnya tidak diberikan z-index.*/
+		div{
+			width: 200px;
+			height: 200px;
+			position: absolute;
+		}
+		.satu {
+			background-color: salmon;
+	
+		}
+		.dua {
+			background-color: lightgreen;
+			top: 100px; 
+			left: 100px;
+
+		}
+		.tiga {
+			background-color: royalblue;
+			top: 200px;
+			left: 200px;
+		}
+	</style>
+</head>
+<body>
+
+<!-- ini adalah contoh jika ditulis paling akhir/paling bawah,maka posisi elemen berada paling depan,tapi jika sebelumnya tidak diberikan z-index.-->
+	
+	<div class="dua"></div>
+	<div class="tiga"></div>
+	<!-- disini saya memindahkan class satu dipaling akhir supaya class satu berada dipaling depan. -->
+	<div class="satu"></div>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<h1>pembelajaran ke sepuluh</h1>
+
+<p> diatas ini adalah contoh jika ditulis paling akhir/paling bawah,maka posisi elemen berada paling depan,tapi jika sebelumnya tidak diberikan z-index.</p>
+<p>dicontoh ini saya memindahkan class satu dipaling akhir supaya class satu berada dipaling depan.</p>
+</body>
+</html>

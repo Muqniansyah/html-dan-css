@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>latihan flexbox 1</title>
+	<style>
+		/* yg display */
+		.container1 {
+			width: 600px;
+			border: 5px solid #ADFFFFFF;
+			margin: 30px auto;
+			padding: 5px;
+			box-sizing: border-box;
+			/*contoh property display*/
+			display: flex;
+
+		} 
+
+		.container1 div {
+			width: 120px;
+			height: 120px;
+			background-color: rgb(19,133,255);
+		}
+
+		/*yg flex-direction*/
+		.container2 {
+			width: 600px;
+			border: 5px solid #ADFFFFFF;
+			margin: 30px auto;
+			padding: 5px;
+			box-sizing: border-box;
+			display: flex;
+			/*contoh property flex-direction*/
+			flex-direction: row-reverse;
+		} 
+
+		.container2 div {
+			width: 120px;
+			height: 120px;
+			background-color: rgb(19,133,255);
+			margin: 2px;
+		}
+
+		/*yg flex-wrap*/
+		.container3 {
+			width: 600px;
+			border: 5px solid #ADFFFFFF;
+			margin: 30px auto;
+			padding: 5px;
+			box-sizing: border-box;
+			display: flex;
+			/*contoh property flex-wrap*/
+			flex-wrap: wrap-reverse;
+		} 
+
+		.container3 div {
+			width: 120px;
+			height: 120px;
+			background-color: rgb(19,133,255);
+			margin: 2px;
+		}
+
+		/*yg justify-content*/
+		.container4 {
+			width: 600px;
+			border: 5px solid #ADFFFFFF;
+			margin: 30px auto;
+			padding: 5px;
+			box-sizing: border-box;
+			display: flex;
+			/*contoh property justify-content*/
+			justify-content: space-between;
+		} 
+
+		.container4 div {
+			width: 120px;
+			height: 120px;
+			background-color: rgb(19,133,255);
+			margin: 2px;
+		}
+
+		/*yg align-items*/
+		.container5 {
+			width: 600px;
+			height: 400px;
+			border: 5px solid #ADFFFFFF;
+			margin: 30px auto;
+			padding: 5px;
+			box-sizing: border-box;
+			display: flex;
+			/*contoh property align-items*/
+			align-items: flex-end;
+		} 
+
+		.container5 div {
+			width: 120px;
+			height: 120px;
+			background-color: rgb(19,133,255);
+			margin: 2px;
+		}
+
+		/*yg align-content*/
+		.container6 {
+			width: 600px;
+			/*harus ada heightnya supaya align-content berfungsi*/
+			height: 400px;
+			border: 5px solid #ADFFFFFF;
+			margin: 30px auto;
+			padding: 5px;
+			box-sizing: border-box;
+			display: flex;
+			/*contoh property align-content*/
+			flex-wrap: wrap;
+			align-content: space-between;
+		} 
+
+		.container6 div {
+			width: 120px;
+			height: 120px;
+			background-color: rgb(19,133,255);
+			margin: 2px;
+		}
+
+		/*yg order*/
+		.container7 {
+			width: 600px;
+			height: 400px;
+			border: 5px solid #D3AD2BFF;
+			margin: 30px auto;
+			padding: 5px;
+			box-sizing: border-box;
+			display: flex;
+		} 
+
+		.container7 div {
+			width: 120px;
+			height: 120px;
+			background-color: rgb(254,0,112);
+			margin: 2px;
+		}
+			/*contoh order*/
+		.container7 .satu {order: 2;}
+		.container7 .dua  {order: 1;}
+		.container7 .tiga {order: 3;}
+
+		/*yg flex-grow*/
+		.container8 {
+			width: 600px;
+			height: 150px;
+			border: 5px solid #D3AD2BFF;
+			margin: 30px auto;
+			padding: 5px;
+			box-sizing: border-box;
+			display: flex;
+		} 
+
+		.container8 div {
+			background-color: rgb(254,0,112);
+			margin: 2px;
+			flex: 1;
+		}
+			/*contoh flex-grow*/
+		.container8 .satu {flex: 1;}
+		.container8 .dua  {flex: 1;}
+		.container8 .tiga {flex: 3;}
+
+		/*yg align-self*/
+		.container9 {
+			width: 600px;
+			height: 150px;
+			border: 5px solid #D3AD2BFF;
+			margin: 30px auto;
+			padding: 5px;
+			box-sizing: border-box;
+			display: flex;
+			
+		} 
+
+		.container9 div {
+			background-color: rgb(220,3,167);
+			margin: 2px;
+			flex: 1;
+		}
+			/*contoh align-self*/
+		
+		.container9 .dua  {
+			flex: 3;
+			align-self: center;
+		}
+		
+	</style>
+</head>
+<body>
+	
+	<!-- contoh property pada container untuk display -->
+	<div class="container1">
+		<div class="satu">1</div>
+		<div class="dua">2</div>
+		<div class="tiga">3</div>
+		<div class="empat">4</div>
+	</div>
+
+	<!-- contoh property pada container untuk flex-direction -->
+	<div class="container2">
+		<div class="satu">1</div>
+		<div class="dua">2</div>
+		<div class="tiga">3</div>
+		<div class="empat">4</div>
+	</div>
+
+
+	<!-- contoh property pada container untuk flex-wrap -->
+	<div class="container3">
+		<div class="satu">1</div>
+		<div class="dua">2</div>
+		<div class="tiga">3</div>
+		<div class="empat">4</div>
+		<div class="lima">5</div>
+		<div class="enam">6</div>
+		<div class="tujuh">7</div>
+	</div>
+
+
+	<!-- contoh property pada container untuk justify-content -->
+	<div class="container4">
+		<div class="satu">1</div>
+		<div class="dua">2</div>
+		<div class="tiga">3</div>
+		<div class="empat">4</div>
+	</div>
+
+	<!-- contoh property pada container untuk align-items -->
+	<div class="container5">
+		<div class="satu">1</div>
+		<div class="dua">2</div>
+		<div class="tiga">3</div>
+		<div class="empat">4</div>
+	</div>
+
+		<!-- contoh property pada container untuk align-content -->
+	<div class="container6">
+		<div class="satu">1</div>
+		<div class="dua">2</div>
+		<div class="tiga">3</div>
+		<div class="empat">4</div>
+		<div class="lima">5</div>
+		<div class="enam">6</div>
+	</div>
+
+	<!-- contoh property pada items untuk order -->
+	<div class="container7">
+		<div class="satu">1</div>
+		<div class="dua">2</div>
+		<div class="tiga">3</div>
+	</div>	
+
+	<!-- contoh property pada items untuk flex-grow -->
+	<div class="container8">
+		<div class="satu">1</div>
+		<div class="dua">2</div>
+		<div class="tiga">3</div>
+	</div>	
+
+	<!-- contoh property pada items untuk align-self -->
+	<div class="container9">
+		<div class="satu">1</div>
+		<div class="dua">2</div>
+		<div class="tiga">3</div>
+		<div class="empat">4</div>
+	</div>	
+</body>
+</html>

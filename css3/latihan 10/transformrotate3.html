@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>transform</title>
+	<style>
+	p {
+		font-size: 20px;
+		text-align: center;
+	}
+/*ini adalah contoh rotate X*/
+	.kotak1 {
+		width: 200px;
+		height: 200px;
+		background-color: lightblue;
+		margin: 50px auto 0;
+		/*jadi disini diberikan transisi supaya perpindahannya lebih halus*/
+		transition: 1s;
+	} 
+
+	.kotak1:hover {
+		/*maksudnya disini yaitu ketika kotaknya dihover/mouse berada diatas kotak nanti kotak akan mentransformasi rotate X dengan sebesar 180 derajat*/
+		transform: rotateX(180deg);
+	}
+
+/*ini adalah contoh rotate Y*/
+	.kotak2 {
+		width: 200px;
+		height: 200px;
+		background-color: lightblue;
+		margin: 50px auto 0;
+		/*jadi disini diberikan transisi supaya perpindahannya lebih halus*/
+		transition: 1s;
+	} 
+
+	.kotak2:hover {
+		/*maksudnya disini yaitu ketika kotaknya dihover/mouse berada diatas kotak nanti kotak akan mentransformasi rotate Y dengan sebesar 180 derajat*/
+		transform: rotateY(180deg);
+	}
+
+/*ini adalah contoh transformasi rotate bertumpuk*/
+	.kotak3 {
+		width: 200px;
+		height: 200px;
+		background-color: lightblue;
+		margin: 50px auto 0;
+		/*jadi disini diberikan transisi supaya perpindahannya lebih halus*/
+		transition: 1s;
+	} 
+
+	.kotak3:hover {
+		/*maksudnya disini yaitu ketika kotaknya dihover/mouse berada diatas kotak nanti kotak akan mentransformasi rotate dengan sebesar minus(-) 180 derajat dan rotate X sebesar 180 derajat dan rotate Y sebesar 180 derajat.*/
+		transform: rotate(-180deg) rotateX(180deg) rotateY(180deg);
+	}
+
+	</style>
+</head>
+<body>
+	
+
+<!-- ini adalah contoh transform -->
+<div class="kotak1"></div>
+<p><b>kesimpulan kotak 1 :</b> yang awalnya kotak biasa tanpa transform, lalu begitu diberikan hover nanti kotaknya akan mentransformasi rotate X dengan sebesar 180 derajat.</p>
+	<br><br><br>
+
+<div class="kotak2"></div>
+<p><b>kesimpulan kotak 2 :</b> yang awalnya kotak biasa tanpa transform, lalu begitu diberikan hover nanti kotaknya akan mentransformasi rotate Y dengan sebesar 180 derajat.</p>
+	<br><br><br>
+
+<div class="kotak3"></div>
+<p><b>kesimpulan kotak 3 :</b> yang awalnya kotak biasa tanpa transform, lalu begitu diberikan hover nanti kotaknya akan mentransformasi rotate dengan sebesar minus(-) 180 derajat dan rotate X sebesar 180 derajat dan rotate Y sebesar 180 derajat.</p>
+	<br><br><br>
+
+
+
+
+
+
+
+
+</body>
+</html>

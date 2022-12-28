@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>program11</title>
+</head>
+<body>
+<h1>pembelajaran ke10
+tentang lanjutan tabel (merging).</h1>
+<p>cara untuk melakukan multiple cursor yaitu dengan klik ctrl+seleksi dengan mouse/klik dengan mouse.</p>
+<p>ditabel merging ini menggunakan 2 attribut yaitu 
+attribut colspan dan rowspan.</p>
+
+<!-- ini adalah table simpel yang belom dikasih attribut colspan dan rowspan -->
+<h3>ini adalah table simpel yang belom dikasih attribut colspan dan rowspan</h3>
+<table border="1" cellspacing="0" cellpadding="5">
+	<tr>
+		<td>1, 1</td>
+		<td>1, 2</td>
+		<td>1, 3</td>
+	</tr>
+	<tr>
+		<td>2, 1</td>
+		<td>2, 2</td>
+		<td>2, 3</td>
+	</tr>
+	<tr>
+		<td>3, 1</td>
+		<td>3, 2</td>
+		<td>3, 3</td>
+	</tr>
+</table>
+
+<br><br><br><br><br>
+
+<h3>dan ini adalah contoh dari attribut colspan.</h3>
+<table border="1" cellspacing="0" cellpadding="5">
+	<tr>
+		<td>1, 1</td>
+		<td colspan="2">colspan 2</td>
+	</tr>
+	<tr>
+		<td>2, 1</td>
+		<td>2, 2</td>
+		<td>2, 3</td>
+	</tr>
+	<tr>
+		<td>3, 1</td>
+		<td>3, 2</td>
+		<td>3, 3</td>
+	</tr>
+</table>
+
+<br><br><br><br><br>
+
+<h3>dan ini adalah contoh dari attribut rowspan.</h3>
+<table border="1" cellspacing="0" cellpadding="5">
+	<tr>
+		<td rowspan="3">rowspan 3</td>
+		<td>1, 2</td>
+		<td>1, 3</td>
+	</tr>
+	<tr>
+		<td>2, 2</td>
+		<td>2, 3</td>
+	</tr>
+	<tr>
+		<td>3, 2</td>
+		<td>3, 3</td>
+	</tr>
+</table>
+
+<br><br><br><br><br>
+
+<h3>dan ini adalah gabungan dari attribut colspan dan rowspan.</h3>
+<table border="1" cellspacing="0" cellpadding="5">
+	<tr>
+		<td rowspan="3">rowspan 3</td>
+		<td colspan="2">colspan 2</td>
+	</tr>
+	<tr>
+		<td>2, 2</td>
+		<td>2, 3</td>
+	</tr>
+	<tr>
+		<td>3, 2</td>
+		<td>3, 3</td>
+	</tr>
+</table>
+
+<br><br><br><br><br>
+
+<h2>latihannya....</h2>
+<p>dan ini hasil dari latihannya..</p>
+
+<table border="1" cellspacing="0" cellpadding="5">
+	<tr>
+		<td>1, 1</td>
+		<td>1, 2</td>
+		<td>1, 3</td>
+		<td>1, 4</td>
+	</tr>
+	<tr>
+		<td>2, 1</td>
+		<td>2, 2</td>
+		<td>2, 3</td>
+		<td>2, 4</td>
+	</tr>
+	<tr>
+		<td>3, 1</td>
+		<td>3, 2</td>
+		<td>3, 3</td>
+		<td>3, 4</td>
+	</tr>
+	<tr>
+		<td>4, 1</td>
+		<td>4, 2</td>
+		<td>4, 3</td>
+		<td>4, 4</td>
+	</tr>
+</table>
+
+<br><br><br>
+
+<table border="1" cellspacing="0" cellpadding="5">
+	<tr>
+		<td>1, 1</td>
+		<td>1, 2</td>
+		<td>1, 3</td>
+		<td>1, 4</td>
+	</tr>
+	<tr>
+		<td>2, 1</td>
+		<td colspan="2">2, 2</td>
+		<td>2, 4</td>
+	</tr>
+	<tr>
+		<td>3, 1</td>
+		<td colspan="2">3, 2</td>
+		<td>3, 4</td>
+	</tr>
+	<tr>
+		<td>4, 1</td>
+		<td>4, 2</td>
+		<td>4, 3</td>
+		<td>4, 4</td>
+	</tr>
+</table>
+
+<br><br><br><br><br>
+
+<table border="1" cellspacing="0" cellpadding="5">
+	<tr>
+		<td>1, 1</td>
+		<td>1, 2</td>
+		<td>1, 3</td>
+		<td>1, 4</td>
+	</tr>
+	<tr>
+		<td>2, 1</td>
+		<td colspan="2" rowspan="2">2, 2</td>
+		<td>2, 4</td>
+	</tr>
+	<tr>
+		<td>3, 1</td>
+		<td>3, 4</td>
+	</tr>
+	<tr>
+		<td>4, 1</td>
+		<td>4, 2</td>
+		<td>4, 3</td>
+		<td>4, 4</td>
+	</tr>
+</table>
+
+<br><br><br>
+
+<h3>cara mengerjakannya yaitu :</h3>
+<ol>
+	<li>pakai atribut colspan untuk menyatukan baris 2 kolom 2 dan baris 3 kolom 2.
+	</li>
+	<li>jangan lupa menghapus baris 2 kolom 3 dan baris 3 kolom 3.<p>alasannya karna baris 2 kolom 2 sudah disatukan dengan baris 2 kolom 3, begitupun dengan baris 3 kolom 2 sudah disatukan dengan baris 3 kolom 3.</p></li>
+	<li>gunakan attribut rowspan dibaris 2 kolom 2. <p>alasannya karna ingin disatukan dengan baris 3 kolom 2</p></li>
+	<li>hapus baris 3 dikolom 2. <p>alasannya karna baris 2 kolom 2 sudah disatukan dengan baris 3 kolom 2 , jadi harus dihapus supayu menyatu.</p></li>
+</ol>
+</body>
+</html>

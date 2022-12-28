@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>opacity</title>
+	<style>
+
+	body {
+		background-image: url(wp.png);
+	}
+
+		/*ini adalah contoh kita tidak bisa bikin elemen child solid/gak transparan ketika elemen parent/pembungkusnya transparan.*/
+
+	.satu {
+		width: 300px;
+		height: 300px;
+		background-color: #f60;
+		opacity: .5;
+		position: relative;
+	}
+
+	.dua {
+		width: 100px;
+		height: 100px;
+		background-color: blue;
+		position: absolute;
+		right: -50px;
+		bottom: -50px;
+		opacity: 1;
+	}
+
+
+
+	</style>
+</head>
+<body>
+	
+<!-- ini adalah contoh opacity yang keempat -->
+<div class="satu">
+	<div class="dua"></div>
+</div>
+
+<br><br><br>
+<p>jadi kita tidak bisa membuat kotak yang kelas 2 solid/gak transparan kalau elemen pembungkusnya sudah transparan.</p>
+
+</body>
+</html>

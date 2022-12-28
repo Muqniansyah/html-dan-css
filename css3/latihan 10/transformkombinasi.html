@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>transform</title>
+	<style>
+	p {
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.kotak {
+		width: 200px;
+		height: 200px;
+		background-color: lightblue;
+		margin: 50px auto 0;
+		/*jadi disini diberikan transisi supaya perpindahannya lebih halus*/
+		transition: 1s;
+	} 
+
+	.kotak:hover {
+		/*ini adalah contoh kombinasi transformasi scale dan rotate*/
+		transform: scale(3) rotate(360deg);
+	}
+
+
+	</style>
+</head>
+<body>
+	
+
+<!-- ini adalah contoh transform -->
+<div class="kotak"></div>
+<p><b>penjelasan :</b>ini adalah contoh kombinasi transformasi scale dan rotate</p>
+	<br><br><br>
+
+
+
+
+</body>
+</html>

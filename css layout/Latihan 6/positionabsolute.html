@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>position</title>
+	<style>
+	/*contoh position absolute*/
+		div {
+			width: 200px;
+			height: 200px;
+		}
+		.satu {
+			background-color: lightgreen;
+		}
+		.dua {
+			background-color: violet;
+			position: absolute;
+			left: 50px;
+		}
+		.tiga {
+			background-color: gold;
+		}
+	</style>
+</head>
+<body>
+<h1>pembelajaran ke sepuluh</h1>
+
+<p><b>contoh position absolute.</b></p>
+<!-- contoh position absolute. -->
+<div class="satu"></div>
+<div class="dua"></div>
+<div class="tiga"></div>
+	<br><br>
+
+<p><b>hasilnya :</b>kotak warna violet naik 1 dimensi tapi kotak warna gold naik mengisi tempat warna kotak violet sebelumnya.</p>
+	<br><br>
+
+<p><u>sedikit catatan atau penjelasan.</u></p>
+<!-- sedikit catatan atau penjelasan. -->
+<p><b>konsep position yang absolute.</b></p>
+<ol>
+	<li>ketika kita menggerakkan elemen dengan posisi absolute(menggunakan properti top, left, bottom dan right), ruang yang ditempati oleh elemen tersebut dianggap tidak ada/ruang sebelumnya yang ditempati oleh elemen tersebut dianggap tidak ada oleh elemen lain yang static.</li>
+	<li>ketika kita menggerakkan elemen dengan posisi absolute, elemen akan bergerak relatif terhadap posisi dari elemen parentnya, selama elemen parentnya memiliki posisi yang juga non-static.</li>
+	<li>jika kita memberi properti 
+	Top: 0; dan Left: 0;
+	maka elemen akan berada diujung kiri atas dari elemen parentnya.
+	</li>
+</ol>
+	<br>
+
+<p>supaya parentnya memiliki posisi non-static, kita membutuhkan bantuan position relatif.</p>
+<p>contoh : <a href="positionabsolute2.html">supaya parentnya memiliki posisi non-static.</a></p>
+
+
+
+</body>
+</html>

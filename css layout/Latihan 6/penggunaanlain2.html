@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>penggunaan lain</title>
+	<style>
+	/*ini adalah contoh penggunaan lain dari properti top,left, bottom dan right pada position yang non-static.*/
+	body {
+		height: 2000px;
+	}
+
+	.kotak {
+		background-color: grey;
+		position: fixed;
+		top: 0;
+		/*dengan memakai bottomnya 0, maka berarti tidak perlu menggunakan height pada class kotaknya karna dengan memakai bottom 0,ditambah topnya juga
+		0(nol) mereka akan saling tarik menarik tingginya.*/
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+
+	h1 {
+		margin-top: 50px;
+	}
+	</style>
+</head>
+<body>
+
+<!-- div class kotak ini untuk membuat top-bar. -->
+<div class="kotak"></div>
+
+<!-- ini adalah penggunaan lain dari properti top,left,bottom dan right pada position yang non-static.. -->
+<h1>ini adalah penggunaan lain dari properti top,left,bottom dan right pada position yang non-static..</h1>
+
+<h2>contoh kedua penggunaan lain dari properti top,left,bottom dan right pada position yang non-static.</h2>
+
+<p>dicontoh kedua ini membuat elemen tarik menarik dengan menggunakan top dan bottom,dan juga menggunakan left dan right.jadi tidak memakai width dan height.</p>
+
+
+<p>hasil dari contoh kedua ini akan membuat class kotak menutupi layarnya karna top dan bottom saling tarik menarik dan juga left dan right saling tarik menarik.</p>
+
+
+</body>
+</html>

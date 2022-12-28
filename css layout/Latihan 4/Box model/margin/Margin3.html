@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>box model</title>
+	<style>
+		/*ini adalah contoh dari overlapping margin yang margin horizontal(kiri dan kanan).*/
+		/*dan ini adalah display inline block yang digunakan supaya elemen sejajar.*/
+		div{ display: inline-block; }
+		.satu{
+			width: 200px;
+			height: 200px;
+			background-color: lightgreen;
+			margin-right: 30px;	
+		}
+		.dua{
+			width: 100px;
+			height: 100px;
+			background-color: lightblue;
+			margin-left: 20px;
+		}
+
+	</style>
+</head>
+<body>
+<h1>lanjutan pembelajaran keempat</h1>
+<p>untuk yang horizontal (kiri dan kanan),supaya elemen sejajar gunakan display inline atau inline-block tapi lebih baik gunakan display inline-block jika awalnya elemen menggunakan display block.</p>
+<p>khusus untuk yang horizontal (kiri dan kanan) margin akan dijumlahkan antara margin kiri dan kanan berlaku untuk inline dan inline block.</p>
+
+ <p>caranya display inline block dan contoh dari overlapping margin yang margin horizontal(kiri dan kanan). :</p>
+<div class="satu">1</div><div class="dua">2</div>
+
+<p>hasil akhirnya akan bertambah margin kiri dan kanannya jika menggunakan overlapping margin yang margin horizontal(kiri dan kanan).</p>
+
+<!-- hasilnya akan ada jarak,supaya hilang caranya harus hilangkan spasi dihtmlnya.
+  dari yang seperti ini :
+<div class="satu">1</div>
+<div class="dua">2</div>
+  menjadi :
+<div class="satu">1</div><div class="dua">2</div>
+ -->
+<br><hr>
+<a href="Margin4.html">penggunaan negatif margin</a>
+</body>
+</html>

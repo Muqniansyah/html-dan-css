@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Border Radius</title>
+	<style>
+	/*ini contoh border radius yang pertama.*/
+	.contoh1 {
+		width: 500px;
+		height: 400px;
+		background-color: salmon;
+		margin: 20px auto;
+		/*ini contoh border radius*/
+		border-radius: 20px;
+	}
+
+	/*ini contoh border radius yang kedua.*/
+	.contoh2 {
+		width: 500px;
+		height: 400px;
+		background-color: #3EC247;
+		margin: 20px auto;
+		/*ini contoh border radius untuk mengganti beberapa sisi yang diinginkan*/
+		border-top-right-radius: 50%;
+		border-bottom-left-radius: 50%;
+	}
+ 
+	/*ini contoh border radius yang ketiga.*/ 
+	.contoh3 {
+		width: 500px;
+		height: 400px;
+		background-color: #FAF872;
+		margin: 20px auto;
+		/*ini contoh border radius yang apabila ingin mengganti beberapa sisi yang diinginkan tapi disingkat penulisannya.*/
+		border-radius: 0 50% 0 50%;
+	}
+
+	/*ini contoh border radius yang keempat. dicontoh ini apabila ditambahkan backround-image.*/
+	 .contoh4 {
+		width: 500px;
+		height: 400px;
+		background-color: #6D2A12;
+		margin: 20px auto;
+		background-image: url(papoyy.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		/*ini contoh border radius*/
+		border-radius: 0 50% 0 50%;
+	}
+
+	/*ini contoh border radius yang kelima. dicontoh ini digunakan untuk memperbaiki elemen div dihtml yang keluar dari border radius.*/
+	.contoh5 {
+		width: 500px;
+		height: 400px;
+		background-color: #7B67BC;
+		margin: 20px auto;
+		border-radius: 50%;
+		/*ini cara memperbaikinya dengan ofverflow valuenya hidden*/
+		overflow: hidden;
+		text-align: center;
+		line-height: 400px;
+	}
+	/*dan ini contoh cara mengatur ukuran dari gambarnya */
+	.contoh5 img {
+		width: 500px;
+	}
+
+
+	</style>
+</head>
+<body>
+
+<!-- ini adalah contoh border radius yang pertama -->
+<div class="contoh1"></div>
+
+<!-- ini adalah contoh border radius yang kedua -->
+<div class="contoh2"></div>
+
+<!-- ini adalah contoh border radius yang ketiga -->
+<div class="contoh3"></div>
+	
+<!-- ini adalah contoh border radius yang keempat -->
+<div class="contoh4"></div>
+
+<!-- ini adalah contoh border radius yang kelima -->
+<div class="contoh5"> 
+	<!-- ini adalah contoh elemennya, elemen apa saja yang ada div dihtml/kotaknya jika dikasih border radius maka akan elemen akan keluar dari border radiusnya. -->
+	<img src="papoyy.png" alt="papoyy">
+</div>
+
+
+</body>
+</html>

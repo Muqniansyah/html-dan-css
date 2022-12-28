@@ -1,0 +1,30 @@
+css
+
+cara menuliskan dicss tidak perlu memakai tag style.
+
+latihan 1 = Tentang cara menyimpan css
+
+latihan 2 = Tentang font style
+
+latihan 3 = Tentang text style
+
+latihan 4 = Tentang background
+
+latihan 5 = Tentang selector
+
+latihan 6 = Tentang pseudo class
+
+latihan 7 = Tentang inheritance
+
+latihan 8 = Tentang specificity
+
+
+(cara membuat 2 layar,yaitu : klik windows+kanan/kiri).
+
+(cara membersihkan chrome: kemenu google atau titik tiga,lalu pilih more tools,lalu
+ pilih clear browsing data atau bisa klik ctrl+shift+del, setelah itu pilih yang basic dan atur waktu 
+lalu yang terakhir klik pilihan clear data).
+
+(biasanya file html dinamakan index.html,dan css dinamakan style.css).
+
+	selesai..

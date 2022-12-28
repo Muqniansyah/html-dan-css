@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>opacity</title>
+	<style>
+
+	body {
+		background-image: url(wp.png);
+	}
+
+		/*ini adalah contoh membuat kotak yang kelas 2 lebih transparan terhadap kotak yang kelas 1.*/
+
+	.satu {
+		width: 300px;
+		height: 300px;
+		background-color: #f60;
+		opacity: .5;
+		position: relative;
+	}
+
+	.dua {
+		width: 100px;
+		height: 100px;
+		background-color: blue;
+		position: absolute;
+		right: -50px;
+		bottom: -50px;
+		/*diberikan opacity*/
+		opacity: 0.5;
+	}
+
+
+	</style>
+</head>
+<body>
+	
+<!-- ini adalah contoh opacity lanjutan dari contoh yang ketiga -->
+<div class="satu">
+	<div class="dua"></div>
+</div>
+
+<br><br><br><br>
+<p><b>hasilnya :</b></p>
+<p>membuat kotak yang dua/yang warna biru akan lebih transparan dari kotak yang satu.</p>
+<p>dan harus ingat opacity kotak yang dua 0,5 diambil dari opacity kotak yang satu 0,5 jadi jika dilihat sebenarnya kotak yang dua/warna biru ini transparansinya 0,25 karna setengah dari opacity kotak yang satu 0,5</p>
+<p>cara ini hanya akan membuat agar kotak yang dua lebih transparan terhadap kotak yang satu.</p>
+
+
+</body>
+</html>

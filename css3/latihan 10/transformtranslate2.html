@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>transform</title>
+	<style>
+	p {
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.kotak {
+		width: 200px;
+		height: 200px;
+		background-color: lightblue;
+		margin: 50px auto 0;
+		/*jadi disini diberikan transisi supaya perpindahannya lebih halus*/
+		transition: 1s;
+	} 
+
+	.kotak:hover {
+		/*maksudnya disini yaitu ketika kotaknya dihover/mouse berada diatas kotak nanti kotak akan mentransformasi translate dengan sebesar 50 pixels(px)*/
+		transform: translate(50px);
+	}
+
+
+	</style>
+</head>
+<body>
+	
+
+<!-- ini adalah contoh transform -->
+<div class="kotak"></div>
+<p><b>kesimpulannya :</b> yang awalnya kotak biasa tanpa transform, lalu begitu diberikan hover nanti kotaknya akan mentransformasi translate dengan sebesar 50 pixels(px).</p>
+<p>dan perlu diingat dengan menggunakan translate, maka tidak akan mempengaruhi elemen disekitarnya.</p>
+	<br><br><br>
+
+<a href="transformtranslate3.html">lanjutannya.</a>
+
+</body>
+</html>

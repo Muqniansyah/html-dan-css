@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>overflow</title>
+	<style>
+	/*ini adalah contoh overflow yang visible*/
+	.visible{
+		height: 200px;
+		width: 200px;
+		background-color: pink;
+		overflow: visible;
+	}
+	/*ini adalah contoh overflow yang auto*/
+		div{
+			height: 200px;
+			width: 200px;
+			background-color: pink;
+			overflow: auto;
+		}
+	/*ini contoh jika konten/tulisannya cukup,jika pakai overflow yang auto maka scrollnya akan hilang. */
+		.auto{
+			height: 200px;
+			width: 200px;
+			background-color: pink;
+			overflow: auto;
+		}
+	</style>
+</head>
+<body>
+<h1>pembelajaran ketiga</h1>
+	<br><br><hr>
+
+<h3>ini adalah contoh overflow yang memakai visible/kondisi defaultnya</h3>
+
+<p><b>ini hanya contoh teks!</b></p>
+<div class="visible">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+
+<h3>ini adalah contoh overflow yang memakai auto</h3>
+
+<p><b>ini hanya contoh teks!</b></p>
+<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+	<br><br><hr>
+
+<h3>ini ketika jika konten/tulisannya cukup,jika pakai overflow yang auto maka scrollnya akan hilang.</h3>
+
+<div class="auto">ceritanya ini teks.hanya contoh teks!</div>
+	<br><br><hr>
+
+<!-- penjelasan -->
+<p><b>penjelasannya</b></p>
+<p>overflow digunakan untuk mengatur perilaku elemen yang keluar dari parentnya</p>
+<p>ada 4 value dari properti overflow,jenisnya yaitu :</p>
+<ol>
+	<li>visible</li>
+	<p>jika ada konten keluar dari parentnya,akan diperlihatkan kontennya.</p>
+	<li>auto</li>
+	<p>menambahkan scroll keyika elemen/konten tidak cukup.</p>
+	<li>hidden</li>
+	<p>jika konten keluar dari parentnya, akan disembunyikan kontennya.</p>
+	<li>scroll</li>
+	<p>memunculkan scroll ketika elemen/konten tidak cukup</p>
+</ol>
+
+
+</body>
+</html>

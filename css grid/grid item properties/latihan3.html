@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid | grid-area yang masukkan dari template</title>
+    <style>
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+          background-color: #ddd;
+        }
+  
+        .container {
+          width: 80%;
+          margin: 50px auto;
+          display: grid;
+          grid-template-columns: minmax(200px, 300px) 1fr 1fr;
+          grid-template-rows: repeat(3, 100px);
+          /* cara penggunaan grid-template-areas */
+          grid-template-areas:
+            'header header header'
+            'sidebar content content'
+            'footer footer footer';
+        }
+  
+        .item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+  
+        .header {
+          /* cara panggil/petakan dari grid-template-areas menggunakan grid-area */
+          grid-area: header;
+          background-color: lightblue;
+        }
+  
+        .sidebar {
+          /* cara panggil/petakan dari grid-template-areas menggunakan grid-area */
+          grid-area: sidebar;
+          background-color: salmon;
+        }
+  
+        .content {
+          /* cara panggil/petakan dari grid-template-areas menggunakan grid-area */
+          grid-area: content;
+          background-color: lightgreen;
+        }
+  
+        .footer {
+          /* cara panggil/petakan dari grid-template-areas menggunakan grid-area */
+          grid-area: footer;
+          background-color: silver;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+      <!-- tambahin kelas tambahan seperti header,sidebar,content,dan footer dan lainnya untuk bisa memanggil di cssnya supaya
+      bisa menetapkan grid-areanya-->
+        <div class="item header">1</div>
+        <div class="item sidebar">2</div>
+        <div class="item content">3</div>
+        <div class="item footer">4</div>
+    </div>    
+</body>
+</html>

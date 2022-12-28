@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>program 12</title>
+</head>
+<body>
+<h1>pembelajaran ke 11
+tentang form.</h1>
+<h3>dan perlu diingat for ada dilabel dan id ada diinput.</h3>
+
+<form>
+<!-- ini adalah contoh attribut input jenis text. -->
+<!-- for dan id harus sama tidak boleh beda. -->
+<p>ini adalah contoh attribut input jenis text tanpa for dan id.</p>
+	<label>username :</label>
+	<input type="text">
+		<br>
+<!-- lebih disarankan memakai dengan for dan id daripada tidak memakai for dan id.bedanya adalah ketika memakai for dan id, saat kita mengklik username atau tulisannya atau labelnya kita bisa mengisi form tersebut. -->
+<p>ini adalah contoh attribut input jenis text dengan for dan id.</p>
+	<label for="username">username :</label>
+	<input type="text" id="username">
+		<br>
+
+
+<!-- ini adalah contoh attribut input jenis password. -->
+<p>ini adalah contoh attribut input jenis password tanpa for dan id.</p>
+	<label>password :</label>
+	<input type="password">
+		<br>
+
+<p>ini adalah contoh attribut input jenis password dengan for dan id.</p>
+	<label for="password">password :</label>
+	<input type="password" id="password">
+		<br>
+
+
+<!-- ini adalah contoh attribut input jenis radio. -->
+<p>ini adalah contoh attribut input jenis radio yang salah.</p>
+	<input type="radio" id="pria"><label for="pria">pria</label>
+	<input type="radio" id="wanita"><label for="wanita">wanita</label>
+		<br>
+
+<p>ini adalah contoh attribut input jenis radio yang benar.</p>
+<p>dengan memakai tag name berarti untuk mengelompokkan pria dan wanita dalam jenis kelamin.</p>
+<!-- tag name harus sama antara input radio satu dengan yang lainnya. dan dicontoh yang ini ada 2 input radio yaitu pria dan wanita. -->
+	<input type="radio" id="pria" name="Jenis kelamin"><label for="pria">pria</label>
+	<input type="radio" id="wanita" name="Jenis kelamin"><label for="wanita">wanita</label>
+		<br>
+
+
+<!-- ini adalah contoh attribut input jenis checkbox. -->
+<p>ini adalah contoh attribut input jenis checkbox.</p>
+	<input type="checkbox" id="menyanyi"><label for="menyanyi">menyanyi</label>
+	<input type="checkbox" id="basket"><label for="basket">basket</label>
+	<input type="checkbox" id="voly"><label for="voly">voly</label>
+	<input type="checkbox" id="renang"><label for="renang">renang</label>
+		<br>
+
+
+<p>ini adalah contoh attribut input jenis submit. ini adalah pemakaian yang salah, karena untuk membuat submit,reset, dan button memakai attribut button.</p> 
+<p>ini contoh pemakain salah.</p>
+	<input type="submit" value="kirim!">
+		<br><br>
+
+<!-- dan ini adalah contoh attribut button jenis submit, reset, dan button. -->
+<p>ini adalah pemakaian yang benar.</p>
+	<h3>contoh dari attribut button jenis submit.</h3>
+	<button type="submit">kirim!</button>
+		<br>
+
+	<h3>contoh dari attribut button jenis reset.</h3>
+	<button type="reset">reset!</button>
+		<br>
+
+	<h3>contoh dari attribut button jenis button.</h3>
+	<button type="button">button!</button>
+		<br>
+
+
+<!-- ini adalah contoh dari attribut textarea. -->
+<p>ini adalah contoh dari attribut textarea.</p>
+	<textarea></textarea>
+		<br>
+
+
+<!-- ini adalah contoh dari attribut select. dan didalam attribut select ada option/pilihan.-->
+<p>ini adalah contoh dari attribut select.</p>
+	<select> 
+		<option>bandung</option>
+		<option>bekasi</option>
+		<option>jawa barat</option>
+	</select>
+		<br><br>
+
+<p>atau bisa dijadikan seperti ini :</p>
+<!-- menjadikan pilihan disamping teks bisa dengan for dan id. -->
+<label for="nama kota">nama kota</label>
+	<select id="nama kota">  
+		<option>bandung</option>
+		<option>bekasi</option>
+		<option>jawa barat</option>
+	</select>
+		<br><br><br><br>
+</form>
+
+
+<br><br><br><br><br>
+
+
+<h1> Hasil latihan meluruskan form dengan tabel</h1>
+<table border="1" cellspacing="0" cellpadding="5">
+	<tr>
+		<td> <label for="username"> username :</label></td>
+		<td> <input type="text" id="username"></td>
+	</tr>
+	<tr>
+		<td> <label for="password">password :</label></td>
+		<td> <input type="password" id="password"></td>
+	</tr>
+	<tr>
+		<td> <input type="radio" id="pria" name="jenis kelamin"><label for="pria">pria		</label></td> 
+		<td> <input type="radio" id="wanita" name="jenis kelamin"><label for="wanita">		wanita</label></td>
+	</tr>
+	<tr>
+		<td> <input type="checkbox" id="lari"><label for="lari">lari</label></td> 
+		<td> <input type="checkbox" id="jalan"><label for="jalan">jalan</label></td>
+	</tr>
+	<tr>
+		<td> combo box :</td>
+		<td> <select> 
+				<option>makan</option>
+				<option>minum</option>
+				<option>joget</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td> textarea :</td>
+		<td> <textarea></textarea></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><button type="button">button</button></td>
+	</tr>
+</table>
+
+
+<h2>dan menjadi</h2>
+<table>
+	<tr>
+		<td> <label for="username"> username :</label></td>
+		<td> <input type="text" id="username"></td>
+	</tr>
+	<tr>
+		<td> <label for="password">password :</label></td>
+		<td> <input type="password" id="password"></td>
+	</tr>
+	<tr>
+		<td> <input type="radio" id="pria" name="jenis kelamin"><label for="pria">pria		</label></td> 
+		<td> <input type="radio" id="wanita" name="jenis kelamin"><label for="wanita">		wanita</label></td>
+	</tr>
+	<tr>
+		<td> <input type="checkbox" id="lari"><label for="lari">lari</label></td> 
+		<td> <input type="checkbox" id="jalan"><label for="jalan">jalan</label></td>
+	</tr>
+	<tr>
+		<td> combo box :</td>
+		<td> <select> 
+				<option>makan</option>
+				<option>minum</option>
+				<option>joget</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td> textarea :</td>
+		<td> <textarea></textarea></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><button type="button">button</button></td>
+	</tr>
+</table>
+
+</body>
+</html>
