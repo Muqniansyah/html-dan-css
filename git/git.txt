@@ -210,8 +210,8 @@ untuk set url atau inisialisasi token.
 keterangan :
 - origin = nama remotenya
 - ghp_pd8D8CxtnBr8liN9 = token
-- Muqniansyah = username
-- coba-git-ignore.git = repository folder
+- username = nama user
+- nama_repo.git = repository folder
 
 56.)git rebase <nama_branch>
 cara menggunakan rebase
